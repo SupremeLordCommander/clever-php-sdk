@@ -1,0 +1,23 @@
+{
+    "name": "geekspeek/clever",
+    "description": "Clever API/SSO PHP library",
+    "authors": [{
+        "name": "Joshua Lawrence",
+        "email": "lawrence.joshua@gmail.com"
+    }],
+    "homepage": "https://clever.com",
+    "license": "MIT",
+    "keywords": ["clever", "composer", "clever.com"],
+    "require": {
+        "php"    : ">=5.3",
+        "psr/log": "~1.0"
+    },
+    "require-dev": {
+        "phpunit/phpunit" : "~4.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Clever\\": "src"
+        }
+    }
+}
