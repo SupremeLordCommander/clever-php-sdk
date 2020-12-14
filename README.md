@@ -26,4 +26,4 @@ This does use the simple Swagger API implemention for the SDK maintained by Clev
 
 # Licensing
 
-See the Licensing Docs [here][LICENSE.md]
+See the Licensing Docs [here](LICENSE.md)
