@@ -3,11 +3,11 @@
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**district_contact** | [**\Swagger\Client\Model\DistrictAdmin**](DistrictAdmin.md) |  | [optional] 
+**district_contact** | [**\Swagger\Client\Model\DistrictContact**](DistrictContact.md) |  | [optional] 
 **error** | **string** |  | [optional] 
 **id** | **string** |  | [optional] 
 **last_sync** | **string** |  | [optional] 
-**launch_date** | **string** |  | [optional] 
+**launch_date** | [**\DateTime**](\DateTime.md) |  | [optional] 
 **login_methods** | **string[]** |  | [optional] 
 **mdr_number** | **string** |  | [optional] 
 **name** | **string** |  | [optional] 

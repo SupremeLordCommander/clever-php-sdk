@@ -1,6 +1,6 @@
 # Swagger\Client\EventsApi
 
-All URIs are relative to *https://api.clever.com/v2.1*
+All URIs are relative to *https://api.clever.com/v3.0*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------

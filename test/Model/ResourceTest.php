@@ -90,16 +90,23 @@ class ResourceTest extends \PHPUnit_Framework_TestCase
     }
 
     /**
-     * Test attribute "roles"
+     * Test attribute "id"
      */
-    public function testPropertyRoles()
+    public function testPropertyId()
     {
     }
 
     /**
-     * Test attribute "sourced_id"
+     * Test attribute "resource_id"
      */
-    public function testPropertySourcedId()
+    public function testPropertyResourceId()
+    {
+    }
+
+    /**
+     * Test attribute "roles"
+     */
+    public function testPropertyRoles()
     {
     }
 
@@ -114,13 +121,6 @@ class ResourceTest extends \PHPUnit_Framework_TestCase
      * Test attribute "updated"
      */
     public function testPropertyUpdated()
-    {
-    }
-
-    /**
-     * Test attribute "vendor_resource_id"
-     */
-    public function testPropertyVendorResourceId()
     {
     }
 }

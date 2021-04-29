@@ -58,11 +58,11 @@ class Resource implements ModelInterface, ArrayAccess
     protected static $swaggerTypes = [
         'created' => '\DateTime',
 'district' => 'string',
+'id' => 'string',
+'resource_id' => 'string',
 'roles' => 'string[]',
-'sourced_id' => 'string',
 'title' => 'string',
-'updated' => '\DateTime',
-'vendor_resource_id' => 'string'    ];
+'updated' => '\DateTime'    ];
 
     /**
       * Array of property to format mappings. Used for (de)serialization
@@ -72,11 +72,11 @@ class Resource implements ModelInterface, ArrayAccess
     protected static $swaggerFormats = [
         'created' => 'date-time',
 'district' => null,
+'id' => null,
+'resource_id' => null,
 'roles' => null,
-'sourced_id' => null,
 'title' => null,
-'updated' => 'date-time',
-'vendor_resource_id' => null    ];
+'updated' => 'date-time'    ];
 
     /**
      * Array of property to type mappings. Used for (de)serialization
@@ -107,11 +107,11 @@ class Resource implements ModelInterface, ArrayAccess
     protected static $attributeMap = [
         'created' => 'created',
 'district' => 'district',
+'id' => 'id',
+'resource_id' => 'resource_id',
 'roles' => 'roles',
-'sourced_id' => 'sourcedId',
 'title' => 'title',
-'updated' => 'updated',
-'vendor_resource_id' => 'vendorResourceId'    ];
+'updated' => 'updated'    ];
 
     /**
      * Array of attributes to setter functions (for deserialization of responses)
@@ -121,11 +121,11 @@ class Resource implements ModelInterface, ArrayAccess
     protected static $setters = [
         'created' => 'setCreated',
 'district' => 'setDistrict',
+'id' => 'setId',
+'resource_id' => 'setResourceId',
 'roles' => 'setRoles',
-'sourced_id' => 'setSourcedId',
 'title' => 'setTitle',
-'updated' => 'setUpdated',
-'vendor_resource_id' => 'setVendorResourceId'    ];
+'updated' => 'setUpdated'    ];
 
     /**
      * Array of attributes to getter functions (for serialization of requests)
@@ -135,11 +135,11 @@ class Resource implements ModelInterface, ArrayAccess
     protected static $getters = [
         'created' => 'getCreated',
 'district' => 'getDistrict',
+'id' => 'getId',
+'resource_id' => 'getResourceId',
 'roles' => 'getRoles',
-'sourced_id' => 'getSourcedId',
 'title' => 'getTitle',
-'updated' => 'getUpdated',
-'vendor_resource_id' => 'getVendorResourceId'    ];
+'updated' => 'getUpdated'    ];
 
     /**
      * Array of attributes where the key is the local name,
@@ -214,11 +214,11 @@ self::ROLES_STUDENT,        ];
     {
         $this->container['created'] = isset($data['created']) ? $data['created'] : null;
         $this->container['district'] = isset($data['district']) ? $data['district'] : null;
+        $this->container['id'] = isset($data['id']) ? $data['id'] : null;
+        $this->container['resource_id'] = isset($data['resource_id']) ? $data['resource_id'] : null;
         $this->container['roles'] = isset($data['roles']) ? $data['roles'] : null;
-        $this->container['sourced_id'] = isset($data['sourced_id']) ? $data['sourced_id'] : null;
         $this->container['title'] = isset($data['title']) ? $data['title'] : null;
         $this->container['updated'] = isset($data['updated']) ? $data['updated'] : null;
-        $this->container['vendor_resource_id'] = isset($data['vendor_resource_id']) ? $data['vendor_resource_id'] : null;
     }
 
     /**
@@ -294,6 +294,54 @@ self::ROLES_STUDENT,        ];
     }
 
     /**
+     * Gets id
+     *
+     * @return string
+     */
+    public function getId()
+    {
+        return $this->container['id'];
+    }
+
+    /**
+     * Sets id
+     *
+     * @param string $id id
+     *
+     * @return $this
+     */
+    public function setId($id)
+    {
+        $this->container['id'] = $id;
+
+        return $this;
+    }
+
+    /**
+     * Gets resource_id
+     *
+     * @return string
+     */
+    public function getResourceId()
+    {
+        return $this->container['resource_id'];
+    }
+
+    /**
+     * Sets resource_id
+     *
+     * @param string $resource_id resource_id
+     *
+     * @return $this
+     */
+    public function setResourceId($resource_id)
+    {
+        $this->container['resource_id'] = $resource_id;
+
+        return $this;
+    }
+
+    /**
      * Gets roles
      *
      * @return string[]
@@ -322,30 +370,6 @@ self::ROLES_STUDENT,        ];
             );
         }
         $this->container['roles'] = $roles;
-
-        return $this;
-    }
-
-    /**
-     * Gets sourced_id
-     *
-     * @return string
-     */
-    public function getSourcedId()
-    {
-        return $this->container['sourced_id'];
-    }
-
-    /**
-     * Sets sourced_id
-     *
-     * @param string $sourced_id sourced_id
-     *
-     * @return $this
-     */
-    public function setSourcedId($sourced_id)
-    {
-        $this->container['sourced_id'] = $sourced_id;
 
         return $this;
     }
@@ -394,30 +418,6 @@ self::ROLES_STUDENT,        ];
     public function setUpdated($updated)
     {
         $this->container['updated'] = $updated;
-
-        return $this;
-    }
-
-    /**
-     * Gets vendor_resource_id
-     *
-     * @return string
-     */
-    public function getVendorResourceId()
-    {
-        return $this->container['vendor_resource_id'];
-    }
-
-    /**
-     * Sets vendor_resource_id
-     *
-     * @param string $vendor_resource_id vendor_resource_id
-     *
-     * @return $this
-     */
-    public function setVendorResourceId($vendor_resource_id)
-    {
-        $this->container['vendor_resource_id'] = $vendor_resource_id;
 
         return $this;
     }
