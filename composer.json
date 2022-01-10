@@ -5,14 +5,14 @@
   "license": "MIT",
   "authors": [
     {
-      "name": "Ogbonna Vitalis",
-      "email": "agavitalisogbonna@gmail.com"
+      "name": "Joshua Lawrence",
+      "email": "lawrence.joshua@gmail.com"
     }
   ],
   "minimum-stability": "stable",
   "autoload": {
     "psr-4": {
-      "vitalis\\HelloWorld\\": "src/"
+      "Clever\\": "src/"
     }
   },
   "require": {}
