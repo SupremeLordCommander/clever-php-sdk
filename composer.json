@@ -1,7 +1,13 @@
 {
   "name": "geekspeek/clever-sdk-api",
-  "description": "A simple hello world composer package",
+  "description": "This composer packge is for the Clever API. Clever is an amazing tool and important in education data management.",
+  "keywords": [
+    "laravel",
+    "ranking",
+    "CEDS"
+  ],
   "type": "library",
+  "homepage": "http://clever.com",
   "license": "MIT",
   "authors": [
     {
@@ -15,5 +21,11 @@
       "Clever\\": "src/"
     }
   },
-  "require": {}
+  "require": {
+    "php": ">=7.0",
+    "ext-curl": "*",
+    "ext-json": "*",
+    "ext-mbstring": "*",
+    "guzzlehttp/guzzle": "^6.2"
+  }
 }
