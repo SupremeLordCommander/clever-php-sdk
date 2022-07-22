@@ -1,31 +1,38 @@
 {
-  "name": "geekspeek/clever-sdk-api",
-  "description": "This composer packge is for the Clever API. Clever is an amazing tool and important in education data management.",
-  "keywords": [
-    "laravel",
-    "ranking",
-    "CEDS"
-  ],
-  "type": "library",
-  "homepage": "http://clever.com",
-  "license": "MIT",
-  "authors": [
-    {
-      "name": "Joshua Lawrence",
-      "email": "lawrence.joshua@gmail.com"
+    "description": "Serves the Clever Data API",
+    "keywords": [
+        "openapitools",
+        "openapi-generator",
+        "openapi",
+        "php",
+        "sdk",
+        "rest",
+        "api"
+    ],
+    "homepage": "https://openapi-generator.tech",
+    "license": "unlicense",
+    "authors": [
+        {
+            "name": "OpenAPI-Generator contributors",
+            "homepage": "https://openapi-generator.tech"
+        }
+    ],
+    "require": {
+        "php": "^7.4 || ^8.0",
+        "ext-curl": "*",
+        "ext-json": "*",
+        "ext-mbstring": "*",
+        "guzzlehttp/guzzle": "^7.3",
+        "guzzlehttp/psr7": "^1.7 || ^2.0"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^8.0 || ^9.0",
+        "friendsofphp/php-cs-fixer": "^3.5"
+    },
+    "autoload": {
+        "psr-4": { "OpenAPI\\Client\\" : "lib/" }
+    },
+    "autoload-dev": {
+        "psr-4": { "OpenAPI\\Client\\Test\\" : "test/" }
     }
-  ],
-  "minimum-stability": "stable",
-  "autoload": {
-    "psr-4": {
-      "Clever\\": "src/"
-    }
-  },
-  "require": {
-    "php": ">=7.0",
-    "ext-curl": "*",
-    "ext-json": "*",
-    "ext-mbstring": "*",
-    "guzzlehttp/guzzle": "^6.2"
-  }
 }
