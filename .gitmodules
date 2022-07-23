@@ -1,6 +1,0 @@
-[submodule "dependencies"]
-	path = dependencies
-	url = git@github.com:Clever/swagger-api.git
-[submodule "generated/php"]
-	path = generated/php
-	url = git@github.com:geekspeek/clever-php-sdk.git
