@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 # ref: https://github.com/github/gitignore/blob/master/Composer.gitignore
 
 composer.phar
@@ -17,6 +16,4 @@ composer.phar
 
 generated*
 dependencies*
-=======
 .vscode
->>>>>>> 8bf78a7c31f22bfefe17d819843cf825d8531099
