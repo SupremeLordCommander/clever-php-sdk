@@ -1,4 +1,5 @@
 {
+    "name": "geekspeek/clever-php",
     "description": "Composer package for OpenAPI client for OpenAPI Petstore",
     "keywords": [
         "clever",
@@ -13,7 +14,7 @@
     "license": "unlicense",
     "authors": [
         {
-            "name": "Joshua Lawrence",
+            "name": "Joshua Lawrence"
         }
     ],
     "require": {
