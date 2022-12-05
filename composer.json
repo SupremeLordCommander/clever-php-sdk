@@ -1,20 +1,20 @@
 {
-    "description": "Serves the Clever Data API",
+    "description": "Composer package for OpenAPI client for OpenAPI Petstore",
     "keywords": [
-        "openapitools",
-        "openapi-generator",
+        "clever",
+        "clever-api",
         "openapi",
         "php",
         "sdk",
         "rest",
         "api"
     ],
-    "homepage": "https://openapi-generator.tech",
+    "homepage": "https://www.clever.com",
     "license": "unlicense",
     "authors": [
         {
-            "name": "OpenAPI-Generator contributors",
-            "homepage": "https://openapi-generator.tech"
+            "name": "Joshua Lawrence",
+            "homepage": ""
         }
     ],
     "require": {
