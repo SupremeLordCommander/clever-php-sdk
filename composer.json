@@ -1,5 +1,5 @@
 {
-    "name": "geekspeek/clever-php",
+    "name": "geekspeek/clever-php-sdk",
     "description": "Composer package for Clever APIs",
     "keywords": [
         "clever",
