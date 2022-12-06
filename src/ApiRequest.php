@@ -11,7 +11,7 @@ abstract class ApiRequest {
 
 	const VERSION = '1.1.0';
 
-	const APIBASE = "https://api.clever.com/v1.1";
+	const APIBASE = "https://api.clever.com/v2.1";
 
 	protected $token;
 
