@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  Swagger\Client
+ * @package  Clever\Client
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -26,16 +26,16 @@
  * Do not edit the class manually.
  */
 
-namespace Swagger\Client\Model;
+namespace Clever\Client\Model;
 
 use \ArrayAccess;
-use \Swagger\Client\ObjectSerializer;
+use \Clever\Client\ObjectSerializer;
 
 /**
  * SchoolAdmin Class Doc Comment
  *
  * @category Class
- * @package  Swagger\Client
+ * @package  Clever\Client
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -56,13 +56,13 @@ class SchoolAdmin implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerTypes = [
-        'credentials' => '\Swagger\Client\Model\Credentials',
+        'credentials' => '\Clever\Client\Model\Credentials',
 'department' => 'string',
 'district' => 'string',
 'email' => 'string',
 'ext' => 'object',
 'id' => 'string',
-'name' => '\Swagger\Client\Model\AdminName',
+'name' => '\Clever\Client\Model\AdminName',
 'schools' => 'string[]',
 'staff_id' => 'string',
 'title' => 'string'    ];
@@ -253,7 +253,7 @@ class SchoolAdmin implements ModelInterface, ArrayAccess
     /**
      * Gets credentials
      *
-     * @return \Swagger\Client\Model\Credentials
+     * @return \Clever\Client\Model\Credentials
      */
     public function getCredentials()
     {
@@ -263,7 +263,7 @@ class SchoolAdmin implements ModelInterface, ArrayAccess
     /**
      * Sets credentials
      *
-     * @param \Swagger\Client\Model\Credentials $credentials credentials
+     * @param \Clever\Client\Model\Credentials $credentials credentials
      *
      * @return $this
      */
@@ -397,7 +397,7 @@ class SchoolAdmin implements ModelInterface, ArrayAccess
     /**
      * Gets name
      *
-     * @return \Swagger\Client\Model\AdminName
+     * @return \Clever\Client\Model\AdminName
      */
     public function getName()
     {
@@ -407,7 +407,7 @@ class SchoolAdmin implements ModelInterface, ArrayAccess
     /**
      * Sets name
      *
-     * @param \Swagger\Client\Model\AdminName $name name
+     * @param \Clever\Client\Model\AdminName $name name
      *
      * @return $this
      */

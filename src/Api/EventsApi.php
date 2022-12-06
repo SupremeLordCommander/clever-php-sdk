@@ -4,7 +4,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  Swagger\Client
+ * @package  Clever\Client
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -25,7 +25,7 @@
  * Do not edit the class manually.
  */
 
-namespace Swagger\Client\Api;
+namespace Clever\Client\Api;
 
 use GuzzleHttp\Client;
 use GuzzleHttp\ClientInterface;
@@ -33,16 +33,16 @@ use GuzzleHttp\Exception\RequestException;
 use GuzzleHttp\Psr7\MultipartStream;
 use GuzzleHttp\Psr7\Request;
 use GuzzleHttp\RequestOptions;
-use Swagger\Client\ApiException;
-use Swagger\Client\Configuration;
-use Swagger\Client\HeaderSelector;
-use Swagger\Client\ObjectSerializer;
+use Clever\Client\ApiException;
+use Clever\Client\Configuration;
+use Clever\Client\HeaderSelector;
+use Clever\Client\ObjectSerializer;
 
 /**
  * EventsApi Class Doc Comment
  *
  * @category Class
- * @package  Swagger\Client
+ * @package  Clever\Client
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -91,9 +91,9 @@ class EventsApi
      *
      * @param  string $id id (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \Clever\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \Swagger\Client\Model\EventResponse
+     * @return \Clever\Client\Model\EventResponse
      */
     public function getEvent($id)
     {
@@ -106,13 +106,13 @@ class EventsApi
      *
      * @param  string $id (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \Clever\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \Swagger\Client\Model\EventResponse, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \Clever\Client\Model\EventResponse, HTTP status code, HTTP response headers (array of strings)
      */
     public function getEventWithHttpInfo($id)
     {
-        $returnType = '\Swagger\Client\Model\EventResponse';
+        $returnType = '\Clever\Client\Model\EventResponse';
         $request = $this->getEventRequest($id);
 
         try {
@@ -164,7 +164,7 @@ class EventsApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\EventResponse',
+                        '\Clever\Client\Model\EventResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -172,7 +172,7 @@ class EventsApi
                 case 404:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\NotFound',
+                        '\Clever\Client\Model\NotFound',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -214,7 +214,7 @@ class EventsApi
      */
     public function getEventAsyncWithHttpInfo($id)
     {
-        $returnType = '\Swagger\Client\Model\EventResponse';
+        $returnType = '\Clever\Client\Model\EventResponse';
         $request = $this->getEventRequest($id);
 
         return $this->client
@@ -365,9 +365,9 @@ class EventsApi
      * @param  string $school school (optional)
      * @param  string[] $record_type record_type (optional)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \Clever\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \Swagger\Client\Model\EventsResponse
+     * @return \Clever\Client\Model\EventsResponse
      */
     public function getEvents($limit = null, $starting_after = null, $ending_before = null, $school = null, $record_type = null)
     {
@@ -384,13 +384,13 @@ class EventsApi
      * @param  string $school (optional)
      * @param  string[] $record_type (optional)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \Clever\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \Swagger\Client\Model\EventsResponse, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \Clever\Client\Model\EventsResponse, HTTP status code, HTTP response headers (array of strings)
      */
     public function getEventsWithHttpInfo($limit = null, $starting_after = null, $ending_before = null, $school = null, $record_type = null)
     {
-        $returnType = '\Swagger\Client\Model\EventsResponse';
+        $returnType = '\Clever\Client\Model\EventsResponse';
         $request = $this->getEventsRequest($limit, $starting_after, $ending_before, $school, $record_type);
 
         try {
@@ -442,7 +442,7 @@ class EventsApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\EventsResponse',
+                        '\Clever\Client\Model\EventsResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -450,7 +450,7 @@ class EventsApi
                 case 404:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\NotFound',
+                        '\Clever\Client\Model\NotFound',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -500,7 +500,7 @@ class EventsApi
      */
     public function getEventsAsyncWithHttpInfo($limit = null, $starting_after = null, $ending_before = null, $school = null, $record_type = null)
     {
-        $returnType = '\Swagger\Client\Model\EventsResponse';
+        $returnType = '\Clever\Client\Model\EventsResponse';
         $request = $this->getEventsRequest($limit, $starting_after, $ending_before, $school, $record_type);
 
         return $this->client

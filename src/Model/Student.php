@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  Swagger\Client
+ * @package  Clever\Client
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -26,16 +26,16 @@
  * Do not edit the class manually.
  */
 
-namespace Swagger\Client\Model;
+namespace Clever\Client\Model;
 
 use \ArrayAccess;
-use \Swagger\Client\ObjectSerializer;
+use \Clever\Client\ObjectSerializer;
 
 /**
  * Student Class Doc Comment
  *
  * @category Class
- * @package  Swagger\Client
+ * @package  Clever\Client
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -57,12 +57,12 @@ class Student implements ModelInterface, ArrayAccess
       */
     protected static $swaggerTypes = [
         'created' => 'string',
-'credentials' => '\Swagger\Client\Model\Credentials',
+'credentials' => '\Clever\Client\Model\Credentials',
 'district' => 'string',
 'dob' => 'string',
 'ell_status' => 'string',
 'email' => 'string',
-'enrollments' => '\Swagger\Client\Model\SchoolEnrollment[]',
+'enrollments' => '\Clever\Client\Model\SchoolEnrollment[]',
 'ext' => 'object',
 'gender' => 'string',
 'grade' => 'string',
@@ -72,8 +72,8 @@ class Student implements ModelInterface, ArrayAccess
 'id' => 'string',
 'iep_status' => 'string',
 'last_modified' => 'string',
-'location' => '\Swagger\Client\Model\Location',
-'name' => '\Swagger\Client\Model\Name',
+'location' => '\Clever\Client\Model\Location',
+'name' => '\Clever\Client\Model\Name',
 'race' => 'string',
 'school' => 'string',
 'schools' => 'string[]',
@@ -651,7 +651,7 @@ self::RACE_EMPTY,        ];
     /**
      * Gets credentials
      *
-     * @return \Swagger\Client\Model\Credentials
+     * @return \Clever\Client\Model\Credentials
      */
     public function getCredentials()
     {
@@ -661,7 +661,7 @@ self::RACE_EMPTY,        ];
     /**
      * Sets credentials
      *
-     * @param \Swagger\Client\Model\Credentials $credentials credentials
+     * @param \Clever\Client\Model\Credentials $credentials credentials
      *
      * @return $this
      */
@@ -780,7 +780,7 @@ self::RACE_EMPTY,        ];
     /**
      * Gets enrollments
      *
-     * @return \Swagger\Client\Model\SchoolEnrollment[]
+     * @return \Clever\Client\Model\SchoolEnrollment[]
      */
     public function getEnrollments()
     {
@@ -790,7 +790,7 @@ self::RACE_EMPTY,        ];
     /**
      * Sets enrollments
      *
-     * @param \Swagger\Client\Model\SchoolEnrollment[] $enrollments enrollments
+     * @param \Clever\Client\Model\SchoolEnrollment[] $enrollments enrollments
      *
      * @return $this
      */
@@ -1056,7 +1056,7 @@ self::RACE_EMPTY,        ];
     /**
      * Gets location
      *
-     * @return \Swagger\Client\Model\Location
+     * @return \Clever\Client\Model\Location
      */
     public function getLocation()
     {
@@ -1066,7 +1066,7 @@ self::RACE_EMPTY,        ];
     /**
      * Sets location
      *
-     * @param \Swagger\Client\Model\Location $location location
+     * @param \Clever\Client\Model\Location $location location
      *
      * @return $this
      */
@@ -1080,7 +1080,7 @@ self::RACE_EMPTY,        ];
     /**
      * Gets name
      *
-     * @return \Swagger\Client\Model\Name
+     * @return \Clever\Client\Model\Name
      */
     public function getName()
     {
@@ -1090,7 +1090,7 @@ self::RACE_EMPTY,        ];
     /**
      * Sets name
      *
-     * @param \Swagger\Client\Model\Name $name name
+     * @param \Clever\Client\Model\Name $name name
      *
      * @return $this
      */

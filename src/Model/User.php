@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  Swagger\Client
+ * @package  Clever\Client
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -26,16 +26,16 @@
  * Do not edit the class manually.
  */
 
-namespace Swagger\Client\Model;
+namespace Clever\Client\Model;
 
 use \ArrayAccess;
-use \Swagger\Client\ObjectSerializer;
+use \Clever\Client\ObjectSerializer;
 
 /**
  * User Class Doc Comment
  *
  * @category Class
- * @package  Swagger\Client
+ * @package  Clever\Client
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -61,8 +61,8 @@ class User implements ModelInterface, ArrayAccess
 'email' => 'string',
 'id' => 'string',
 'last_modified' => 'string',
-'name' => '\Swagger\Client\Model\Name',
-'roles' => '\Swagger\Client\Model\Roles'    ];
+'name' => '\Clever\Client\Model\Name',
+'roles' => '\Clever\Client\Model\Roles'    ];
 
     /**
       * Array of property to format mappings. Used for (de)serialization
@@ -355,7 +355,7 @@ class User implements ModelInterface, ArrayAccess
     /**
      * Gets name
      *
-     * @return \Swagger\Client\Model\Name
+     * @return \Clever\Client\Model\Name
      */
     public function getName()
     {
@@ -365,7 +365,7 @@ class User implements ModelInterface, ArrayAccess
     /**
      * Sets name
      *
-     * @param \Swagger\Client\Model\Name $name name
+     * @param \Clever\Client\Model\Name $name name
      *
      * @return $this
      */
@@ -379,7 +379,7 @@ class User implements ModelInterface, ArrayAccess
     /**
      * Gets roles
      *
-     * @return \Swagger\Client\Model\Roles
+     * @return \Clever\Client\Model\Roles
      */
     public function getRoles()
     {
@@ -389,7 +389,7 @@ class User implements ModelInterface, ArrayAccess
     /**
      * Sets roles
      *
-     * @param \Swagger\Client\Model\Roles $roles roles
+     * @param \Clever\Client\Model\Roles $roles roles
      *
      * @return $this
      */

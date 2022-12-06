@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  Swagger\Client
+ * @package  Clever\Client
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -26,14 +26,14 @@
  * Do not edit the class manually.
  */
 
-namespace Swagger\Client\Model;
-use \Swagger\Client\ObjectSerializer;
+namespace Clever\Client\Model;
+use \Clever\Client\ObjectSerializer;
 
 /**
  * UsersUpdated Class Doc Comment
  *
  * @category Class
- * @package  Swagger\Client
+ * @package  Clever\Client
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -54,7 +54,7 @@ class UsersUpdated extends Event
       * @var string[]
       */
     protected static $swaggerTypes = [
-        'data' => '\Swagger\Client\Model\UserObject',
+        'data' => '\Clever\Client\Model\UserObject',
 'previous_attributes' => 'object'    ];
 
     /**
@@ -199,7 +199,7 @@ class UsersUpdated extends Event
     /**
      * Gets data
      *
-     * @return \Swagger\Client\Model\UserObject
+     * @return \Clever\Client\Model\UserObject
      */
     public function getData()
     {
@@ -209,7 +209,7 @@ class UsersUpdated extends Event
     /**
      * Sets data
      *
-     * @param \Swagger\Client\Model\UserObject $data data
+     * @param \Clever\Client\Model\UserObject $data data
      *
      * @return $this
      */

@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  Swagger\Client
+ * @package  Clever\Client
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -26,16 +26,16 @@
  * Do not edit the class manually.
  */
 
-namespace Swagger\Client\Model;
+namespace Clever\Client\Model;
 
 use \ArrayAccess;
-use \Swagger\Client\ObjectSerializer;
+use \Clever\Client\ObjectSerializer;
 
 /**
  * UserObject Class Doc Comment
  *
  * @category Class
- * @package  Swagger\Client
+ * @package  Clever\Client
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -56,7 +56,7 @@ class UserObject implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerTypes = [
-        'object' => '\Swagger\Client\Model\User'    ];
+        'object' => '\Clever\Client\Model\User'    ];
 
     /**
       * Array of property to format mappings. Used for (de)serialization
@@ -199,7 +199,7 @@ class UserObject implements ModelInterface, ArrayAccess
     /**
      * Gets object
      *
-     * @return \Swagger\Client\Model\User
+     * @return \Clever\Client\Model\User
      */
     public function getObject()
     {
@@ -209,7 +209,7 @@ class UserObject implements ModelInterface, ArrayAccess
     /**
      * Sets object
      *
-     * @param \Swagger\Client\Model\User $object object
+     * @param \Clever\Client\Model\User $object object
      *
      * @return $this
      */

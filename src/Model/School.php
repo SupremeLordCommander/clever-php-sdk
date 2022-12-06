@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  Swagger\Client
+ * @package  Clever\Client
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -26,16 +26,16 @@
  * Do not edit the class manually.
  */
 
-namespace Swagger\Client\Model;
+namespace Clever\Client\Model;
 
 use \ArrayAccess;
-use \Swagger\Client\ObjectSerializer;
+use \Clever\Client\ObjectSerializer;
 
 /**
  * School Class Doc Comment
  *
  * @category Class
- * @package  Swagger\Client
+ * @package  Clever\Client
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -62,13 +62,13 @@ class School implements ModelInterface, ArrayAccess
 'high_grade' => 'string',
 'id' => 'string',
 'last_modified' => 'string',
-'location' => '\Swagger\Client\Model\Location',
+'location' => '\Clever\Client\Model\Location',
 'low_grade' => 'string',
 'mdr_number' => 'string',
 'name' => 'string',
 'nces_id' => 'string',
 'phone' => 'string',
-'principal' => '\Swagger\Client\Model\Principal',
+'principal' => '\Clever\Client\Model\Principal',
 'school_number' => 'string',
 'sis_id' => 'string',
 'state_id' => 'string'    ];
@@ -564,7 +564,7 @@ self::LOW_GRADE_EMPTY,        ];
     /**
      * Gets location
      *
-     * @return \Swagger\Client\Model\Location
+     * @return \Clever\Client\Model\Location
      */
     public function getLocation()
     {
@@ -574,7 +574,7 @@ self::LOW_GRADE_EMPTY,        ];
     /**
      * Sets location
      *
-     * @param \Swagger\Client\Model\Location $location location
+     * @param \Clever\Client\Model\Location $location location
      *
      * @return $this
      */
@@ -717,7 +717,7 @@ self::LOW_GRADE_EMPTY,        ];
     /**
      * Gets principal
      *
-     * @return \Swagger\Client\Model\Principal
+     * @return \Clever\Client\Model\Principal
      */
     public function getPrincipal()
     {
@@ -727,7 +727,7 @@ self::LOW_GRADE_EMPTY,        ];
     /**
      * Sets principal
      *
-     * @param \Swagger\Client\Model\Principal $principal principal
+     * @param \Clever\Client\Model\Principal $principal principal
      *
      * @return $this
      */

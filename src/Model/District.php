@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  Swagger\Client
+ * @package  Clever\Client
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -26,16 +26,16 @@
  * Do not edit the class manually.
  */
 
-namespace Swagger\Client\Model;
+namespace Clever\Client\Model;
 
 use \ArrayAccess;
-use \Swagger\Client\ObjectSerializer;
+use \Clever\Client\ObjectSerializer;
 
 /**
  * District Class Doc Comment
  *
  * @category Class
- * @package  Swagger\Client
+ * @package  Clever\Client
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -56,7 +56,7 @@ class District implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerTypes = [
-        'district_contact' => '\Swagger\Client\Model\DistrictAdmin',
+        'district_contact' => '\Clever\Client\Model\DistrictAdmin',
 'error' => 'string',
 'id' => 'string',
 'last_sync' => 'string',
@@ -304,7 +304,7 @@ self::STATE_EMPTY,        ];
     /**
      * Gets district_contact
      *
-     * @return \Swagger\Client\Model\DistrictAdmin
+     * @return \Clever\Client\Model\DistrictAdmin
      */
     public function getDistrictContact()
     {
@@ -314,7 +314,7 @@ self::STATE_EMPTY,        ];
     /**
      * Sets district_contact
      *
-     * @param \Swagger\Client\Model\DistrictAdmin $district_contact district_contact
+     * @param \Clever\Client\Model\DistrictAdmin $district_contact district_contact
      *
      * @return $this
      */

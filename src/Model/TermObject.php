@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  Swagger\Client
+ * @package  Clever\Client
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -26,16 +26,16 @@
  * Do not edit the class manually.
  */
 
-namespace Swagger\Client\Model;
+namespace Clever\Client\Model;
 
 use \ArrayAccess;
-use \Swagger\Client\ObjectSerializer;
+use \Clever\Client\ObjectSerializer;
 
 /**
  * TermObject Class Doc Comment
  *
  * @category Class
- * @package  Swagger\Client
+ * @package  Clever\Client
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -56,7 +56,7 @@ class TermObject implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerTypes = [
-        'object' => '\Swagger\Client\Model\Term'    ];
+        'object' => '\Clever\Client\Model\Term'    ];
 
     /**
       * Array of property to format mappings. Used for (de)serialization
@@ -199,7 +199,7 @@ class TermObject implements ModelInterface, ArrayAccess
     /**
      * Gets object
      *
-     * @return \Swagger\Client\Model\Term
+     * @return \Clever\Client\Model\Term
      */
     public function getObject()
     {
@@ -209,7 +209,7 @@ class TermObject implements ModelInterface, ArrayAccess
     /**
      * Sets object
      *
-     * @param \Swagger\Client\Model\Term $object object
+     * @param \Clever\Client\Model\Term $object object
      *
      * @return $this
      */

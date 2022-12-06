@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  Swagger\Client
+ * @package  Clever\Client
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -26,16 +26,16 @@
  * Do not edit the class manually.
  */
 
-namespace Swagger\Client\Model;
+namespace Clever\Client\Model;
 
 use \ArrayAccess;
-use \Swagger\Client\ObjectSerializer;
+use \Clever\Client\ObjectSerializer;
 
 /**
  * DistrictAdmin Class Doc Comment
  *
  * @category Class
- * @package  Swagger\Client
+ * @package  Clever\Client
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -59,7 +59,7 @@ class DistrictAdmin implements ModelInterface, ArrayAccess
         'district' => 'string',
 'email' => 'string',
 'id' => 'string',
-'name' => '\Swagger\Client\Model\AdminName',
+'name' => '\Clever\Client\Model\AdminName',
 'title' => 'string'    ];
 
     /**
@@ -295,7 +295,7 @@ class DistrictAdmin implements ModelInterface, ArrayAccess
     /**
      * Gets name
      *
-     * @return \Swagger\Client\Model\AdminName
+     * @return \Clever\Client\Model\AdminName
      */
     public function getName()
     {
@@ -305,7 +305,7 @@ class DistrictAdmin implements ModelInterface, ArrayAccess
     /**
      * Sets name
      *
-     * @param \Swagger\Client\Model\AdminName $name name
+     * @param \Clever\Client\Model\AdminName $name name
      *
      * @return $this
      */

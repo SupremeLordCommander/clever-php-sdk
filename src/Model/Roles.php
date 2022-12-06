@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  Swagger\Client
+ * @package  Clever\Client
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -26,16 +26,16 @@
  * Do not edit the class manually.
  */
 
-namespace Swagger\Client\Model;
+namespace Clever\Client\Model;
 
 use \ArrayAccess;
-use \Swagger\Client\ObjectSerializer;
+use \Clever\Client\ObjectSerializer;
 
 /**
  * Roles Class Doc Comment
  *
  * @category Class
- * @package  Swagger\Client
+ * @package  Clever\Client
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -56,11 +56,11 @@ class Roles implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerTypes = [
-        'contact' => '\Swagger\Client\Model\Contact',
-'district_admin' => '\Swagger\Client\Model\DistrictAdmin',
-'staff' => '\Swagger\Client\Model\Staff',
-'student' => '\Swagger\Client\Model\Student',
-'teacher' => '\Swagger\Client\Model\Teacher'    ];
+        'contact' => '\Clever\Client\Model\Contact',
+'district_admin' => '\Clever\Client\Model\DistrictAdmin',
+'staff' => '\Clever\Client\Model\Staff',
+'student' => '\Clever\Client\Model\Student',
+'teacher' => '\Clever\Client\Model\Teacher'    ];
 
     /**
       * Array of property to format mappings. Used for (de)serialization
@@ -223,7 +223,7 @@ class Roles implements ModelInterface, ArrayAccess
     /**
      * Gets contact
      *
-     * @return \Swagger\Client\Model\Contact
+     * @return \Clever\Client\Model\Contact
      */
     public function getContact()
     {
@@ -233,7 +233,7 @@ class Roles implements ModelInterface, ArrayAccess
     /**
      * Sets contact
      *
-     * @param \Swagger\Client\Model\Contact $contact contact
+     * @param \Clever\Client\Model\Contact $contact contact
      *
      * @return $this
      */
@@ -247,7 +247,7 @@ class Roles implements ModelInterface, ArrayAccess
     /**
      * Gets district_admin
      *
-     * @return \Swagger\Client\Model\DistrictAdmin
+     * @return \Clever\Client\Model\DistrictAdmin
      */
     public function getDistrictAdmin()
     {
@@ -257,7 +257,7 @@ class Roles implements ModelInterface, ArrayAccess
     /**
      * Sets district_admin
      *
-     * @param \Swagger\Client\Model\DistrictAdmin $district_admin district_admin
+     * @param \Clever\Client\Model\DistrictAdmin $district_admin district_admin
      *
      * @return $this
      */
@@ -271,7 +271,7 @@ class Roles implements ModelInterface, ArrayAccess
     /**
      * Gets staff
      *
-     * @return \Swagger\Client\Model\Staff
+     * @return \Clever\Client\Model\Staff
      */
     public function getStaff()
     {
@@ -281,7 +281,7 @@ class Roles implements ModelInterface, ArrayAccess
     /**
      * Sets staff
      *
-     * @param \Swagger\Client\Model\Staff $staff staff
+     * @param \Clever\Client\Model\Staff $staff staff
      *
      * @return $this
      */
@@ -295,7 +295,7 @@ class Roles implements ModelInterface, ArrayAccess
     /**
      * Gets student
      *
-     * @return \Swagger\Client\Model\Student
+     * @return \Clever\Client\Model\Student
      */
     public function getStudent()
     {
@@ -305,7 +305,7 @@ class Roles implements ModelInterface, ArrayAccess
     /**
      * Sets student
      *
-     * @param \Swagger\Client\Model\Student $student student
+     * @param \Clever\Client\Model\Student $student student
      *
      * @return $this
      */
@@ -319,7 +319,7 @@ class Roles implements ModelInterface, ArrayAccess
     /**
      * Gets teacher
      *
-     * @return \Swagger\Client\Model\Teacher
+     * @return \Clever\Client\Model\Teacher
      */
     public function getTeacher()
     {
@@ -329,7 +329,7 @@ class Roles implements ModelInterface, ArrayAccess
     /**
      * Sets teacher
      *
-     * @param \Swagger\Client\Model\Teacher $teacher teacher
+     * @param \Clever\Client\Model\Teacher $teacher teacher
      *
      * @return $this
      */

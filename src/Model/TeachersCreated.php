@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  Swagger\Client
+ * @package  Clever\Client
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -26,14 +26,14 @@
  * Do not edit the class manually.
  */
 
-namespace Swagger\Client\Model;
-use \Swagger\Client\ObjectSerializer;
+namespace Clever\Client\Model;
+use \Clever\Client\ObjectSerializer;
 
 /**
  * TeachersCreated Class Doc Comment
  *
  * @category Class
- * @package  Swagger\Client
+ * @package  Clever\Client
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -54,7 +54,7 @@ class TeachersCreated extends Event
       * @var string[]
       */
     protected static $swaggerTypes = [
-        'data' => '\Swagger\Client\Model\TeacherObject'    ];
+        'data' => '\Clever\Client\Model\TeacherObject'    ];
 
     /**
       * Array of property to format mappings. Used for (de)serialization
@@ -193,7 +193,7 @@ class TeachersCreated extends Event
     /**
      * Gets data
      *
-     * @return \Swagger\Client\Model\TeacherObject
+     * @return \Clever\Client\Model\TeacherObject
      */
     public function getData()
     {
@@ -203,7 +203,7 @@ class TeachersCreated extends Event
     /**
      * Sets data
      *
-     * @param \Swagger\Client\Model\TeacherObject $data data
+     * @param \Clever\Client\Model\TeacherObject $data data
      *
      * @return $this
      */

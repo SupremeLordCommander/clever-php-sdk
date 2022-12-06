@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  Swagger\Client
+ * @package  Clever\Client
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -26,14 +26,14 @@
  * Do not edit the class manually.
  */
 
-namespace Swagger\Client\Model;
-use \Swagger\Client\ObjectSerializer;
+namespace Clever\Client\Model;
+use \Clever\Client\ObjectSerializer;
 
 /**
  * DistrictadminsUpdated Class Doc Comment
  *
  * @category Class
- * @package  Swagger\Client
+ * @package  Clever\Client
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -54,7 +54,7 @@ class DistrictadminsUpdated extends Event
       * @var string[]
       */
     protected static $swaggerTypes = [
-        'data' => '\Swagger\Client\Model\DistrictAdminObject',
+        'data' => '\Clever\Client\Model\DistrictAdminObject',
 'previous_attributes' => 'object'    ];
 
     /**
@@ -199,7 +199,7 @@ class DistrictadminsUpdated extends Event
     /**
      * Gets data
      *
-     * @return \Swagger\Client\Model\DistrictAdminObject
+     * @return \Clever\Client\Model\DistrictAdminObject
      */
     public function getData()
     {
@@ -209,7 +209,7 @@ class DistrictadminsUpdated extends Event
     /**
      * Sets data
      *
-     * @param \Swagger\Client\Model\DistrictAdminObject $data data
+     * @param \Clever\Client\Model\DistrictAdminObject $data data
      *
      * @return $this
      */

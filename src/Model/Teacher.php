@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  Swagger\Client
+ * @package  Clever\Client
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -26,16 +26,16 @@
  * Do not edit the class manually.
  */
 
-namespace Swagger\Client\Model;
+namespace Clever\Client\Model;
 
 use \ArrayAccess;
-use \Swagger\Client\ObjectSerializer;
+use \Clever\Client\ObjectSerializer;
 
 /**
  * Teacher Class Doc Comment
  *
  * @category Class
- * @package  Swagger\Client
+ * @package  Clever\Client
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -57,13 +57,13 @@ class Teacher implements ModelInterface, ArrayAccess
       */
     protected static $swaggerTypes = [
         'created' => 'string',
-'credentials' => '\Swagger\Client\Model\Credentials',
+'credentials' => '\Clever\Client\Model\Credentials',
 'district' => 'string',
 'email' => 'string',
 'ext' => 'object',
 'id' => 'string',
 'last_modified' => 'string',
-'name' => '\Swagger\Client\Model\Name',
+'name' => '\Clever\Client\Model\Name',
 'school' => 'string',
 'schools' => 'string[]',
 'sis_id' => 'string',
@@ -301,7 +301,7 @@ class Teacher implements ModelInterface, ArrayAccess
     /**
      * Gets credentials
      *
-     * @return \Swagger\Client\Model\Credentials
+     * @return \Clever\Client\Model\Credentials
      */
     public function getCredentials()
     {
@@ -311,7 +311,7 @@ class Teacher implements ModelInterface, ArrayAccess
     /**
      * Sets credentials
      *
-     * @param \Swagger\Client\Model\Credentials $credentials credentials
+     * @param \Clever\Client\Model\Credentials $credentials credentials
      *
      * @return $this
      */
@@ -445,7 +445,7 @@ class Teacher implements ModelInterface, ArrayAccess
     /**
      * Gets name
      *
-     * @return \Swagger\Client\Model\Name
+     * @return \Clever\Client\Model\Name
      */
     public function getName()
     {
@@ -455,7 +455,7 @@ class Teacher implements ModelInterface, ArrayAccess
     /**
      * Sets name
      *
-     * @param \Swagger\Client\Model\Name $name name
+     * @param \Clever\Client\Model\Name $name name
      *
      * @return $this
      */

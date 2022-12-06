@@ -4,7 +4,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  Swagger\Client
+ * @package  Clever\Client
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -25,7 +25,7 @@
  * Do not edit the class manually.
  */
 
-namespace Swagger\Client\Api;
+namespace Clever\Client\Api;
 
 use GuzzleHttp\Client;
 use GuzzleHttp\ClientInterface;
@@ -33,16 +33,16 @@ use GuzzleHttp\Exception\RequestException;
 use GuzzleHttp\Psr7\MultipartStream;
 use GuzzleHttp\Psr7\Request;
 use GuzzleHttp\RequestOptions;
-use Swagger\Client\ApiException;
-use Swagger\Client\Configuration;
-use Swagger\Client\HeaderSelector;
-use Swagger\Client\ObjectSerializer;
+use Clever\Client\ApiException;
+use Clever\Client\Configuration;
+use Clever\Client\HeaderSelector;
+use Clever\Client\ObjectSerializer;
 
 /**
  * DataApi Class Doc Comment
  *
  * @category Class
- * @package  Swagger\Client
+ * @package  Clever\Client
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -91,9 +91,9 @@ class DataApi
      *
      * @param  string $id id (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \Clever\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \Swagger\Client\Model\ContactResponse
+     * @return \Clever\Client\Model\ContactResponse
      */
     public function getContact($id)
     {
@@ -106,13 +106,13 @@ class DataApi
      *
      * @param  string $id (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \Clever\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \Swagger\Client\Model\ContactResponse, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \Clever\Client\Model\ContactResponse, HTTP status code, HTTP response headers (array of strings)
      */
     public function getContactWithHttpInfo($id)
     {
-        $returnType = '\Swagger\Client\Model\ContactResponse';
+        $returnType = '\Clever\Client\Model\ContactResponse';
         $request = $this->getContactRequest($id);
 
         try {
@@ -164,7 +164,7 @@ class DataApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\ContactResponse',
+                        '\Clever\Client\Model\ContactResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -172,7 +172,7 @@ class DataApi
                 case 404:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\NotFound',
+                        '\Clever\Client\Model\NotFound',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -214,7 +214,7 @@ class DataApi
      */
     public function getContactAsyncWithHttpInfo($id)
     {
-        $returnType = '\Swagger\Client\Model\ContactResponse';
+        $returnType = '\Clever\Client\Model\ContactResponse';
         $request = $this->getContactRequest($id);
 
         return $this->client
@@ -364,9 +364,9 @@ class DataApi
      * @param  string $ending_before ending_before (optional)
      * @param  string $count count (optional)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \Clever\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \Swagger\Client\Model\ContactsResponse
+     * @return \Clever\Client\Model\ContactsResponse
      */
     public function getContacts($limit = null, $starting_after = null, $ending_before = null, $count = null)
     {
@@ -382,13 +382,13 @@ class DataApi
      * @param  string $ending_before (optional)
      * @param  string $count (optional)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \Clever\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \Swagger\Client\Model\ContactsResponse, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \Clever\Client\Model\ContactsResponse, HTTP status code, HTTP response headers (array of strings)
      */
     public function getContactsWithHttpInfo($limit = null, $starting_after = null, $ending_before = null, $count = null)
     {
-        $returnType = '\Swagger\Client\Model\ContactsResponse';
+        $returnType = '\Clever\Client\Model\ContactsResponse';
         $request = $this->getContactsRequest($limit, $starting_after, $ending_before, $count);
 
         try {
@@ -440,7 +440,7 @@ class DataApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\ContactsResponse',
+                        '\Clever\Client\Model\ContactsResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -488,7 +488,7 @@ class DataApi
      */
     public function getContactsAsyncWithHttpInfo($limit = null, $starting_after = null, $ending_before = null, $count = null)
     {
-        $returnType = '\Swagger\Client\Model\ContactsResponse';
+        $returnType = '\Clever\Client\Model\ContactsResponse';
         $request = $this->getContactsRequest($limit, $starting_after, $ending_before, $count);
 
         return $this->client
@@ -643,9 +643,9 @@ class DataApi
      * @param  string $starting_after starting_after (optional)
      * @param  string $ending_before ending_before (optional)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \Clever\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \Swagger\Client\Model\ContactsResponse
+     * @return \Clever\Client\Model\ContactsResponse
      */
     public function getContactsForStudent($id, $limit = null, $starting_after = null, $ending_before = null)
     {
@@ -661,13 +661,13 @@ class DataApi
      * @param  string $starting_after (optional)
      * @param  string $ending_before (optional)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \Clever\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \Swagger\Client\Model\ContactsResponse, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \Clever\Client\Model\ContactsResponse, HTTP status code, HTTP response headers (array of strings)
      */
     public function getContactsForStudentWithHttpInfo($id, $limit = null, $starting_after = null, $ending_before = null)
     {
-        $returnType = '\Swagger\Client\Model\ContactsResponse';
+        $returnType = '\Clever\Client\Model\ContactsResponse';
         $request = $this->getContactsForStudentRequest($id, $limit, $starting_after, $ending_before);
 
         try {
@@ -719,7 +719,7 @@ class DataApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\ContactsResponse',
+                        '\Clever\Client\Model\ContactsResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -727,7 +727,7 @@ class DataApi
                 case 404:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\NotFound',
+                        '\Clever\Client\Model\NotFound',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -775,7 +775,7 @@ class DataApi
      */
     public function getContactsForStudentAsyncWithHttpInfo($id, $limit = null, $starting_after = null, $ending_before = null)
     {
-        $returnType = '\Swagger\Client\Model\ContactsResponse';
+        $returnType = '\Clever\Client\Model\ContactsResponse';
         $request = $this->getContactsForStudentRequest($id, $limit, $starting_after, $ending_before);
 
         return $this->client
@@ -937,9 +937,9 @@ class DataApi
      *
      * @param  string $id id (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \Clever\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \Swagger\Client\Model\CourseResponse
+     * @return \Clever\Client\Model\CourseResponse
      */
     public function getCourse($id)
     {
@@ -952,13 +952,13 @@ class DataApi
      *
      * @param  string $id (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \Clever\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \Swagger\Client\Model\CourseResponse, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \Clever\Client\Model\CourseResponse, HTTP status code, HTTP response headers (array of strings)
      */
     public function getCourseWithHttpInfo($id)
     {
-        $returnType = '\Swagger\Client\Model\CourseResponse';
+        $returnType = '\Clever\Client\Model\CourseResponse';
         $request = $this->getCourseRequest($id);
 
         try {
@@ -1010,7 +1010,7 @@ class DataApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\CourseResponse',
+                        '\Clever\Client\Model\CourseResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1018,7 +1018,7 @@ class DataApi
                 case 404:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\NotFound',
+                        '\Clever\Client\Model\NotFound',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1060,7 +1060,7 @@ class DataApi
      */
     public function getCourseAsyncWithHttpInfo($id)
     {
-        $returnType = '\Swagger\Client\Model\CourseResponse';
+        $returnType = '\Clever\Client\Model\CourseResponse';
         $request = $this->getCourseRequest($id);
 
         return $this->client
@@ -1207,9 +1207,9 @@ class DataApi
      *
      * @param  string $id id (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \Clever\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \Swagger\Client\Model\CourseResponse
+     * @return \Clever\Client\Model\CourseResponse
      */
     public function getCourseForSection($id)
     {
@@ -1222,13 +1222,13 @@ class DataApi
      *
      * @param  string $id (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \Clever\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \Swagger\Client\Model\CourseResponse, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \Clever\Client\Model\CourseResponse, HTTP status code, HTTP response headers (array of strings)
      */
     public function getCourseForSectionWithHttpInfo($id)
     {
-        $returnType = '\Swagger\Client\Model\CourseResponse';
+        $returnType = '\Clever\Client\Model\CourseResponse';
         $request = $this->getCourseForSectionRequest($id);
 
         try {
@@ -1280,7 +1280,7 @@ class DataApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\CourseResponse',
+                        '\Clever\Client\Model\CourseResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1288,7 +1288,7 @@ class DataApi
                 case 404:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\NotFound',
+                        '\Clever\Client\Model\NotFound',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1330,7 +1330,7 @@ class DataApi
      */
     public function getCourseForSectionAsyncWithHttpInfo($id)
     {
-        $returnType = '\Swagger\Client\Model\CourseResponse';
+        $returnType = '\Clever\Client\Model\CourseResponse';
         $request = $this->getCourseForSectionRequest($id);
 
         return $this->client
@@ -1480,9 +1480,9 @@ class DataApi
      * @param  string $ending_before ending_before (optional)
      * @param  string $count count (optional)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \Clever\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \Swagger\Client\Model\CoursesResponse
+     * @return \Clever\Client\Model\CoursesResponse
      */
     public function getCourses($limit = null, $starting_after = null, $ending_before = null, $count = null)
     {
@@ -1498,13 +1498,13 @@ class DataApi
      * @param  string $ending_before (optional)
      * @param  string $count (optional)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \Clever\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \Swagger\Client\Model\CoursesResponse, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \Clever\Client\Model\CoursesResponse, HTTP status code, HTTP response headers (array of strings)
      */
     public function getCoursesWithHttpInfo($limit = null, $starting_after = null, $ending_before = null, $count = null)
     {
-        $returnType = '\Swagger\Client\Model\CoursesResponse';
+        $returnType = '\Clever\Client\Model\CoursesResponse';
         $request = $this->getCoursesRequest($limit, $starting_after, $ending_before, $count);
 
         try {
@@ -1556,7 +1556,7 @@ class DataApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\CoursesResponse',
+                        '\Clever\Client\Model\CoursesResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1604,7 +1604,7 @@ class DataApi
      */
     public function getCoursesAsyncWithHttpInfo($limit = null, $starting_after = null, $ending_before = null, $count = null)
     {
-        $returnType = '\Swagger\Client\Model\CoursesResponse';
+        $returnType = '\Clever\Client\Model\CoursesResponse';
         $request = $this->getCoursesRequest($limit, $starting_after, $ending_before, $count);
 
         return $this->client
@@ -1756,9 +1756,9 @@ class DataApi
      *
      * @param  string $id id (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \Clever\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \Swagger\Client\Model\DistrictResponse
+     * @return \Clever\Client\Model\DistrictResponse
      */
     public function getDistrict($id)
     {
@@ -1771,13 +1771,13 @@ class DataApi
      *
      * @param  string $id (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \Clever\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \Swagger\Client\Model\DistrictResponse, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \Clever\Client\Model\DistrictResponse, HTTP status code, HTTP response headers (array of strings)
      */
     public function getDistrictWithHttpInfo($id)
     {
-        $returnType = '\Swagger\Client\Model\DistrictResponse';
+        $returnType = '\Clever\Client\Model\DistrictResponse';
         $request = $this->getDistrictRequest($id);
 
         try {
@@ -1829,7 +1829,7 @@ class DataApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\DistrictResponse',
+                        '\Clever\Client\Model\DistrictResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1837,7 +1837,7 @@ class DataApi
                 case 404:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\NotFound',
+                        '\Clever\Client\Model\NotFound',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1879,7 +1879,7 @@ class DataApi
      */
     public function getDistrictAsyncWithHttpInfo($id)
     {
-        $returnType = '\Swagger\Client\Model\DistrictResponse';
+        $returnType = '\Clever\Client\Model\DistrictResponse';
         $request = $this->getDistrictRequest($id);
 
         return $this->client
@@ -2026,9 +2026,9 @@ class DataApi
      *
      * @param  string $id id (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \Clever\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \Swagger\Client\Model\DistrictAdminResponse
+     * @return \Clever\Client\Model\DistrictAdminResponse
      */
     public function getDistrictAdmin($id)
     {
@@ -2041,13 +2041,13 @@ class DataApi
      *
      * @param  string $id (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \Clever\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \Swagger\Client\Model\DistrictAdminResponse, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \Clever\Client\Model\DistrictAdminResponse, HTTP status code, HTTP response headers (array of strings)
      */
     public function getDistrictAdminWithHttpInfo($id)
     {
-        $returnType = '\Swagger\Client\Model\DistrictAdminResponse';
+        $returnType = '\Clever\Client\Model\DistrictAdminResponse';
         $request = $this->getDistrictAdminRequest($id);
 
         try {
@@ -2099,7 +2099,7 @@ class DataApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\DistrictAdminResponse',
+                        '\Clever\Client\Model\DistrictAdminResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -2107,7 +2107,7 @@ class DataApi
                 case 404:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\NotFound',
+                        '\Clever\Client\Model\NotFound',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -2149,7 +2149,7 @@ class DataApi
      */
     public function getDistrictAdminAsyncWithHttpInfo($id)
     {
-        $returnType = '\Swagger\Client\Model\DistrictAdminResponse';
+        $returnType = '\Clever\Client\Model\DistrictAdminResponse';
         $request = $this->getDistrictAdminRequest($id);
 
         return $this->client
@@ -2299,9 +2299,9 @@ class DataApi
      * @param  string $ending_before ending_before (optional)
      * @param  string $count count (optional)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \Clever\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \Swagger\Client\Model\DistrictAdminsResponse
+     * @return \Clever\Client\Model\DistrictAdminsResponse
      */
     public function getDistrictAdmins($limit = null, $starting_after = null, $ending_before = null, $count = null)
     {
@@ -2317,13 +2317,13 @@ class DataApi
      * @param  string $ending_before (optional)
      * @param  string $count (optional)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \Clever\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \Swagger\Client\Model\DistrictAdminsResponse, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \Clever\Client\Model\DistrictAdminsResponse, HTTP status code, HTTP response headers (array of strings)
      */
     public function getDistrictAdminsWithHttpInfo($limit = null, $starting_after = null, $ending_before = null, $count = null)
     {
-        $returnType = '\Swagger\Client\Model\DistrictAdminsResponse';
+        $returnType = '\Clever\Client\Model\DistrictAdminsResponse';
         $request = $this->getDistrictAdminsRequest($limit, $starting_after, $ending_before, $count);
 
         try {
@@ -2375,7 +2375,7 @@ class DataApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\DistrictAdminsResponse',
+                        '\Clever\Client\Model\DistrictAdminsResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -2423,7 +2423,7 @@ class DataApi
      */
     public function getDistrictAdminsAsyncWithHttpInfo($limit = null, $starting_after = null, $ending_before = null, $count = null)
     {
-        $returnType = '\Swagger\Client\Model\DistrictAdminsResponse';
+        $returnType = '\Clever\Client\Model\DistrictAdminsResponse';
         $request = $this->getDistrictAdminsRequest($limit, $starting_after, $ending_before, $count);
 
         return $this->client
@@ -2575,9 +2575,9 @@ class DataApi
      *
      * @param  string $id id (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \Clever\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \Swagger\Client\Model\DistrictResponse
+     * @return \Clever\Client\Model\DistrictResponse
      */
     public function getDistrictForContact($id)
     {
@@ -2590,13 +2590,13 @@ class DataApi
      *
      * @param  string $id (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \Clever\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \Swagger\Client\Model\DistrictResponse, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \Clever\Client\Model\DistrictResponse, HTTP status code, HTTP response headers (array of strings)
      */
     public function getDistrictForContactWithHttpInfo($id)
     {
-        $returnType = '\Swagger\Client\Model\DistrictResponse';
+        $returnType = '\Clever\Client\Model\DistrictResponse';
         $request = $this->getDistrictForContactRequest($id);
 
         try {
@@ -2648,7 +2648,7 @@ class DataApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\DistrictResponse',
+                        '\Clever\Client\Model\DistrictResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -2656,7 +2656,7 @@ class DataApi
                 case 404:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\NotFound',
+                        '\Clever\Client\Model\NotFound',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -2698,7 +2698,7 @@ class DataApi
      */
     public function getDistrictForContactAsyncWithHttpInfo($id)
     {
-        $returnType = '\Swagger\Client\Model\DistrictResponse';
+        $returnType = '\Clever\Client\Model\DistrictResponse';
         $request = $this->getDistrictForContactRequest($id);
 
         return $this->client
@@ -2845,9 +2845,9 @@ class DataApi
      *
      * @param  string $id id (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \Clever\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \Swagger\Client\Model\DistrictResponse
+     * @return \Clever\Client\Model\DistrictResponse
      */
     public function getDistrictForCourse($id)
     {
@@ -2860,13 +2860,13 @@ class DataApi
      *
      * @param  string $id (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \Clever\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \Swagger\Client\Model\DistrictResponse, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \Clever\Client\Model\DistrictResponse, HTTP status code, HTTP response headers (array of strings)
      */
     public function getDistrictForCourseWithHttpInfo($id)
     {
-        $returnType = '\Swagger\Client\Model\DistrictResponse';
+        $returnType = '\Clever\Client\Model\DistrictResponse';
         $request = $this->getDistrictForCourseRequest($id);
 
         try {
@@ -2918,7 +2918,7 @@ class DataApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\DistrictResponse',
+                        '\Clever\Client\Model\DistrictResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -2926,7 +2926,7 @@ class DataApi
                 case 404:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\NotFound',
+                        '\Clever\Client\Model\NotFound',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -2968,7 +2968,7 @@ class DataApi
      */
     public function getDistrictForCourseAsyncWithHttpInfo($id)
     {
-        $returnType = '\Swagger\Client\Model\DistrictResponse';
+        $returnType = '\Clever\Client\Model\DistrictResponse';
         $request = $this->getDistrictForCourseRequest($id);
 
         return $this->client
@@ -3115,9 +3115,9 @@ class DataApi
      *
      * @param  string $id id (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \Clever\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \Swagger\Client\Model\DistrictResponse
+     * @return \Clever\Client\Model\DistrictResponse
      */
     public function getDistrictForDistrictAdmin($id)
     {
@@ -3130,13 +3130,13 @@ class DataApi
      *
      * @param  string $id (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \Clever\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \Swagger\Client\Model\DistrictResponse, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \Clever\Client\Model\DistrictResponse, HTTP status code, HTTP response headers (array of strings)
      */
     public function getDistrictForDistrictAdminWithHttpInfo($id)
     {
-        $returnType = '\Swagger\Client\Model\DistrictResponse';
+        $returnType = '\Clever\Client\Model\DistrictResponse';
         $request = $this->getDistrictForDistrictAdminRequest($id);
 
         try {
@@ -3188,7 +3188,7 @@ class DataApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\DistrictResponse',
+                        '\Clever\Client\Model\DistrictResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -3196,7 +3196,7 @@ class DataApi
                 case 404:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\NotFound',
+                        '\Clever\Client\Model\NotFound',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -3238,7 +3238,7 @@ class DataApi
      */
     public function getDistrictForDistrictAdminAsyncWithHttpInfo($id)
     {
-        $returnType = '\Swagger\Client\Model\DistrictResponse';
+        $returnType = '\Clever\Client\Model\DistrictResponse';
         $request = $this->getDistrictForDistrictAdminRequest($id);
 
         return $this->client
@@ -3385,9 +3385,9 @@ class DataApi
      *
      * @param  string $id id (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \Clever\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \Swagger\Client\Model\DistrictResponse
+     * @return \Clever\Client\Model\DistrictResponse
      */
     public function getDistrictForSchool($id)
     {
@@ -3400,13 +3400,13 @@ class DataApi
      *
      * @param  string $id (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \Clever\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \Swagger\Client\Model\DistrictResponse, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \Clever\Client\Model\DistrictResponse, HTTP status code, HTTP response headers (array of strings)
      */
     public function getDistrictForSchoolWithHttpInfo($id)
     {
-        $returnType = '\Swagger\Client\Model\DistrictResponse';
+        $returnType = '\Clever\Client\Model\DistrictResponse';
         $request = $this->getDistrictForSchoolRequest($id);
 
         try {
@@ -3458,7 +3458,7 @@ class DataApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\DistrictResponse',
+                        '\Clever\Client\Model\DistrictResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -3466,7 +3466,7 @@ class DataApi
                 case 404:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\NotFound',
+                        '\Clever\Client\Model\NotFound',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -3508,7 +3508,7 @@ class DataApi
      */
     public function getDistrictForSchoolAsyncWithHttpInfo($id)
     {
-        $returnType = '\Swagger\Client\Model\DistrictResponse';
+        $returnType = '\Clever\Client\Model\DistrictResponse';
         $request = $this->getDistrictForSchoolRequest($id);
 
         return $this->client
@@ -3655,9 +3655,9 @@ class DataApi
      *
      * @param  string $id id (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \Clever\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \Swagger\Client\Model\DistrictResponse
+     * @return \Clever\Client\Model\DistrictResponse
      */
     public function getDistrictForSchoolAdmin($id)
     {
@@ -3670,13 +3670,13 @@ class DataApi
      *
      * @param  string $id (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \Clever\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \Swagger\Client\Model\DistrictResponse, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \Clever\Client\Model\DistrictResponse, HTTP status code, HTTP response headers (array of strings)
      */
     public function getDistrictForSchoolAdminWithHttpInfo($id)
     {
-        $returnType = '\Swagger\Client\Model\DistrictResponse';
+        $returnType = '\Clever\Client\Model\DistrictResponse';
         $request = $this->getDistrictForSchoolAdminRequest($id);
 
         try {
@@ -3728,7 +3728,7 @@ class DataApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\DistrictResponse',
+                        '\Clever\Client\Model\DistrictResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -3736,7 +3736,7 @@ class DataApi
                 case 404:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\NotFound',
+                        '\Clever\Client\Model\NotFound',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -3778,7 +3778,7 @@ class DataApi
      */
     public function getDistrictForSchoolAdminAsyncWithHttpInfo($id)
     {
-        $returnType = '\Swagger\Client\Model\DistrictResponse';
+        $returnType = '\Clever\Client\Model\DistrictResponse';
         $request = $this->getDistrictForSchoolAdminRequest($id);
 
         return $this->client
@@ -3925,9 +3925,9 @@ class DataApi
      *
      * @param  string $id id (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \Clever\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \Swagger\Client\Model\DistrictResponse
+     * @return \Clever\Client\Model\DistrictResponse
      */
     public function getDistrictForSection($id)
     {
@@ -3940,13 +3940,13 @@ class DataApi
      *
      * @param  string $id (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \Clever\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \Swagger\Client\Model\DistrictResponse, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \Clever\Client\Model\DistrictResponse, HTTP status code, HTTP response headers (array of strings)
      */
     public function getDistrictForSectionWithHttpInfo($id)
     {
-        $returnType = '\Swagger\Client\Model\DistrictResponse';
+        $returnType = '\Clever\Client\Model\DistrictResponse';
         $request = $this->getDistrictForSectionRequest($id);
 
         try {
@@ -3998,7 +3998,7 @@ class DataApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\DistrictResponse',
+                        '\Clever\Client\Model\DistrictResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -4006,7 +4006,7 @@ class DataApi
                 case 404:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\NotFound',
+                        '\Clever\Client\Model\NotFound',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -4048,7 +4048,7 @@ class DataApi
      */
     public function getDistrictForSectionAsyncWithHttpInfo($id)
     {
-        $returnType = '\Swagger\Client\Model\DistrictResponse';
+        $returnType = '\Clever\Client\Model\DistrictResponse';
         $request = $this->getDistrictForSectionRequest($id);
 
         return $this->client
@@ -4195,9 +4195,9 @@ class DataApi
      *
      * @param  string $id id (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \Clever\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \Swagger\Client\Model\DistrictResponse
+     * @return \Clever\Client\Model\DistrictResponse
      */
     public function getDistrictForStudent($id)
     {
@@ -4210,13 +4210,13 @@ class DataApi
      *
      * @param  string $id (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \Clever\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \Swagger\Client\Model\DistrictResponse, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \Clever\Client\Model\DistrictResponse, HTTP status code, HTTP response headers (array of strings)
      */
     public function getDistrictForStudentWithHttpInfo($id)
     {
-        $returnType = '\Swagger\Client\Model\DistrictResponse';
+        $returnType = '\Clever\Client\Model\DistrictResponse';
         $request = $this->getDistrictForStudentRequest($id);
 
         try {
@@ -4268,7 +4268,7 @@ class DataApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\DistrictResponse',
+                        '\Clever\Client\Model\DistrictResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -4276,7 +4276,7 @@ class DataApi
                 case 404:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\NotFound',
+                        '\Clever\Client\Model\NotFound',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -4318,7 +4318,7 @@ class DataApi
      */
     public function getDistrictForStudentAsyncWithHttpInfo($id)
     {
-        $returnType = '\Swagger\Client\Model\DistrictResponse';
+        $returnType = '\Clever\Client\Model\DistrictResponse';
         $request = $this->getDistrictForStudentRequest($id);
 
         return $this->client
@@ -4465,9 +4465,9 @@ class DataApi
      *
      * @param  string $id id (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \Clever\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \Swagger\Client\Model\DistrictResponse
+     * @return \Clever\Client\Model\DistrictResponse
      */
     public function getDistrictForTeacher($id)
     {
@@ -4480,13 +4480,13 @@ class DataApi
      *
      * @param  string $id (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \Clever\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \Swagger\Client\Model\DistrictResponse, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \Clever\Client\Model\DistrictResponse, HTTP status code, HTTP response headers (array of strings)
      */
     public function getDistrictForTeacherWithHttpInfo($id)
     {
-        $returnType = '\Swagger\Client\Model\DistrictResponse';
+        $returnType = '\Clever\Client\Model\DistrictResponse';
         $request = $this->getDistrictForTeacherRequest($id);
 
         try {
@@ -4538,7 +4538,7 @@ class DataApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\DistrictResponse',
+                        '\Clever\Client\Model\DistrictResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -4546,7 +4546,7 @@ class DataApi
                 case 404:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\NotFound',
+                        '\Clever\Client\Model\NotFound',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -4588,7 +4588,7 @@ class DataApi
      */
     public function getDistrictForTeacherAsyncWithHttpInfo($id)
     {
-        $returnType = '\Swagger\Client\Model\DistrictResponse';
+        $returnType = '\Clever\Client\Model\DistrictResponse';
         $request = $this->getDistrictForTeacherRequest($id);
 
         return $this->client
@@ -4735,9 +4735,9 @@ class DataApi
      *
      * @param  string $id id (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \Clever\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \Swagger\Client\Model\DistrictResponse
+     * @return \Clever\Client\Model\DistrictResponse
      */
     public function getDistrictForTerm($id)
     {
@@ -4750,13 +4750,13 @@ class DataApi
      *
      * @param  string $id (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \Clever\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \Swagger\Client\Model\DistrictResponse, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \Clever\Client\Model\DistrictResponse, HTTP status code, HTTP response headers (array of strings)
      */
     public function getDistrictForTermWithHttpInfo($id)
     {
-        $returnType = '\Swagger\Client\Model\DistrictResponse';
+        $returnType = '\Clever\Client\Model\DistrictResponse';
         $request = $this->getDistrictForTermRequest($id);
 
         try {
@@ -4808,7 +4808,7 @@ class DataApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\DistrictResponse',
+                        '\Clever\Client\Model\DistrictResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -4816,7 +4816,7 @@ class DataApi
                 case 404:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\NotFound',
+                        '\Clever\Client\Model\NotFound',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -4858,7 +4858,7 @@ class DataApi
      */
     public function getDistrictForTermAsyncWithHttpInfo($id)
     {
-        $returnType = '\Swagger\Client\Model\DistrictResponse';
+        $returnType = '\Clever\Client\Model\DistrictResponse';
         $request = $this->getDistrictForTermRequest($id);
 
         return $this->client
@@ -5005,9 +5005,9 @@ class DataApi
      *
      * @param  string $count count (optional)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \Clever\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \Swagger\Client\Model\DistrictsResponse
+     * @return \Clever\Client\Model\DistrictsResponse
      */
     public function getDistricts($count = null)
     {
@@ -5020,13 +5020,13 @@ class DataApi
      *
      * @param  string $count (optional)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \Clever\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \Swagger\Client\Model\DistrictsResponse, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \Clever\Client\Model\DistrictsResponse, HTTP status code, HTTP response headers (array of strings)
      */
     public function getDistrictsWithHttpInfo($count = null)
     {
-        $returnType = '\Swagger\Client\Model\DistrictsResponse';
+        $returnType = '\Clever\Client\Model\DistrictsResponse';
         $request = $this->getDistrictsRequest($count);
 
         try {
@@ -5078,7 +5078,7 @@ class DataApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\DistrictsResponse',
+                        '\Clever\Client\Model\DistrictsResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -5120,7 +5120,7 @@ class DataApi
      */
     public function getDistrictsAsyncWithHttpInfo($count = null)
     {
-        $returnType = '\Swagger\Client\Model\DistrictsResponse';
+        $returnType = '\Clever\Client\Model\DistrictsResponse';
         $request = $this->getDistrictsRequest($count);
 
         return $this->client
@@ -5257,9 +5257,9 @@ class DataApi
      *
      * @param  string $id id (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \Clever\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \Swagger\Client\Model\SchoolResponse
+     * @return \Clever\Client\Model\SchoolResponse
      */
     public function getSchool($id)
     {
@@ -5272,13 +5272,13 @@ class DataApi
      *
      * @param  string $id (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \Clever\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \Swagger\Client\Model\SchoolResponse, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \Clever\Client\Model\SchoolResponse, HTTP status code, HTTP response headers (array of strings)
      */
     public function getSchoolWithHttpInfo($id)
     {
-        $returnType = '\Swagger\Client\Model\SchoolResponse';
+        $returnType = '\Clever\Client\Model\SchoolResponse';
         $request = $this->getSchoolRequest($id);
 
         try {
@@ -5330,7 +5330,7 @@ class DataApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\SchoolResponse',
+                        '\Clever\Client\Model\SchoolResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -5338,7 +5338,7 @@ class DataApi
                 case 404:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\NotFound',
+                        '\Clever\Client\Model\NotFound',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -5380,7 +5380,7 @@ class DataApi
      */
     public function getSchoolAsyncWithHttpInfo($id)
     {
-        $returnType = '\Swagger\Client\Model\SchoolResponse';
+        $returnType = '\Clever\Client\Model\SchoolResponse';
         $request = $this->getSchoolRequest($id);
 
         return $this->client
@@ -5527,9 +5527,9 @@ class DataApi
      *
      * @param  string $id id (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \Clever\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \Swagger\Client\Model\SchoolAdminResponse
+     * @return \Clever\Client\Model\SchoolAdminResponse
      */
     public function getSchoolAdmin($id)
     {
@@ -5542,13 +5542,13 @@ class DataApi
      *
      * @param  string $id (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \Clever\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \Swagger\Client\Model\SchoolAdminResponse, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \Clever\Client\Model\SchoolAdminResponse, HTTP status code, HTTP response headers (array of strings)
      */
     public function getSchoolAdminWithHttpInfo($id)
     {
-        $returnType = '\Swagger\Client\Model\SchoolAdminResponse';
+        $returnType = '\Clever\Client\Model\SchoolAdminResponse';
         $request = $this->getSchoolAdminRequest($id);
 
         try {
@@ -5600,7 +5600,7 @@ class DataApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\SchoolAdminResponse',
+                        '\Clever\Client\Model\SchoolAdminResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -5608,7 +5608,7 @@ class DataApi
                 case 404:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\NotFound',
+                        '\Clever\Client\Model\NotFound',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -5650,7 +5650,7 @@ class DataApi
      */
     public function getSchoolAdminAsyncWithHttpInfo($id)
     {
-        $returnType = '\Swagger\Client\Model\SchoolAdminResponse';
+        $returnType = '\Clever\Client\Model\SchoolAdminResponse';
         $request = $this->getSchoolAdminRequest($id);
 
         return $this->client
@@ -5800,9 +5800,9 @@ class DataApi
      * @param  string $ending_before ending_before (optional)
      * @param  string $count count (optional)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \Clever\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \Swagger\Client\Model\SchoolAdminsResponse
+     * @return \Clever\Client\Model\SchoolAdminsResponse
      */
     public function getSchoolAdmins($limit = null, $starting_after = null, $ending_before = null, $count = null)
     {
@@ -5818,13 +5818,13 @@ class DataApi
      * @param  string $ending_before (optional)
      * @param  string $count (optional)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \Clever\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \Swagger\Client\Model\SchoolAdminsResponse, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \Clever\Client\Model\SchoolAdminsResponse, HTTP status code, HTTP response headers (array of strings)
      */
     public function getSchoolAdminsWithHttpInfo($limit = null, $starting_after = null, $ending_before = null, $count = null)
     {
-        $returnType = '\Swagger\Client\Model\SchoolAdminsResponse';
+        $returnType = '\Clever\Client\Model\SchoolAdminsResponse';
         $request = $this->getSchoolAdminsRequest($limit, $starting_after, $ending_before, $count);
 
         try {
@@ -5876,7 +5876,7 @@ class DataApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\SchoolAdminsResponse',
+                        '\Clever\Client\Model\SchoolAdminsResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -5924,7 +5924,7 @@ class DataApi
      */
     public function getSchoolAdminsAsyncWithHttpInfo($limit = null, $starting_after = null, $ending_before = null, $count = null)
     {
-        $returnType = '\Swagger\Client\Model\SchoolAdminsResponse';
+        $returnType = '\Clever\Client\Model\SchoolAdminsResponse';
         $request = $this->getSchoolAdminsRequest($limit, $starting_after, $ending_before, $count);
 
         return $this->client
@@ -6076,9 +6076,9 @@ class DataApi
      *
      * @param  string $id id (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \Clever\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \Swagger\Client\Model\SchoolResponse
+     * @return \Clever\Client\Model\SchoolResponse
      */
     public function getSchoolForSection($id)
     {
@@ -6091,13 +6091,13 @@ class DataApi
      *
      * @param  string $id (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \Clever\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \Swagger\Client\Model\SchoolResponse, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \Clever\Client\Model\SchoolResponse, HTTP status code, HTTP response headers (array of strings)
      */
     public function getSchoolForSectionWithHttpInfo($id)
     {
-        $returnType = '\Swagger\Client\Model\SchoolResponse';
+        $returnType = '\Clever\Client\Model\SchoolResponse';
         $request = $this->getSchoolForSectionRequest($id);
 
         try {
@@ -6149,7 +6149,7 @@ class DataApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\SchoolResponse',
+                        '\Clever\Client\Model\SchoolResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -6157,7 +6157,7 @@ class DataApi
                 case 404:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\NotFound',
+                        '\Clever\Client\Model\NotFound',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -6199,7 +6199,7 @@ class DataApi
      */
     public function getSchoolForSectionAsyncWithHttpInfo($id)
     {
-        $returnType = '\Swagger\Client\Model\SchoolResponse';
+        $returnType = '\Clever\Client\Model\SchoolResponse';
         $request = $this->getSchoolForSectionRequest($id);
 
         return $this->client
@@ -6346,9 +6346,9 @@ class DataApi
      *
      * @param  string $id id (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \Clever\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \Swagger\Client\Model\SchoolResponse
+     * @return \Clever\Client\Model\SchoolResponse
      */
     public function getSchoolForStudent($id)
     {
@@ -6361,13 +6361,13 @@ class DataApi
      *
      * @param  string $id (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \Clever\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \Swagger\Client\Model\SchoolResponse, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \Clever\Client\Model\SchoolResponse, HTTP status code, HTTP response headers (array of strings)
      */
     public function getSchoolForStudentWithHttpInfo($id)
     {
-        $returnType = '\Swagger\Client\Model\SchoolResponse';
+        $returnType = '\Clever\Client\Model\SchoolResponse';
         $request = $this->getSchoolForStudentRequest($id);
 
         try {
@@ -6419,7 +6419,7 @@ class DataApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\SchoolResponse',
+                        '\Clever\Client\Model\SchoolResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -6427,7 +6427,7 @@ class DataApi
                 case 404:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\NotFound',
+                        '\Clever\Client\Model\NotFound',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -6469,7 +6469,7 @@ class DataApi
      */
     public function getSchoolForStudentAsyncWithHttpInfo($id)
     {
-        $returnType = '\Swagger\Client\Model\SchoolResponse';
+        $returnType = '\Clever\Client\Model\SchoolResponse';
         $request = $this->getSchoolForStudentRequest($id);
 
         return $this->client
@@ -6616,9 +6616,9 @@ class DataApi
      *
      * @param  string $id id (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \Clever\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \Swagger\Client\Model\SchoolResponse
+     * @return \Clever\Client\Model\SchoolResponse
      */
     public function getSchoolForTeacher($id)
     {
@@ -6631,13 +6631,13 @@ class DataApi
      *
      * @param  string $id (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \Clever\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \Swagger\Client\Model\SchoolResponse, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \Clever\Client\Model\SchoolResponse, HTTP status code, HTTP response headers (array of strings)
      */
     public function getSchoolForTeacherWithHttpInfo($id)
     {
-        $returnType = '\Swagger\Client\Model\SchoolResponse';
+        $returnType = '\Clever\Client\Model\SchoolResponse';
         $request = $this->getSchoolForTeacherRequest($id);
 
         try {
@@ -6689,7 +6689,7 @@ class DataApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\SchoolResponse',
+                        '\Clever\Client\Model\SchoolResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -6697,7 +6697,7 @@ class DataApi
                 case 404:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\NotFound',
+                        '\Clever\Client\Model\NotFound',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -6739,7 +6739,7 @@ class DataApi
      */
     public function getSchoolForTeacherAsyncWithHttpInfo($id)
     {
-        $returnType = '\Swagger\Client\Model\SchoolResponse';
+        $returnType = '\Clever\Client\Model\SchoolResponse';
         $request = $this->getSchoolForTeacherRequest($id);
 
         return $this->client
@@ -6889,9 +6889,9 @@ class DataApi
      * @param  string $ending_before ending_before (optional)
      * @param  string $count count (optional)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \Clever\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \Swagger\Client\Model\SchoolsResponse
+     * @return \Clever\Client\Model\SchoolsResponse
      */
     public function getSchools($limit = null, $starting_after = null, $ending_before = null, $count = null)
     {
@@ -6907,13 +6907,13 @@ class DataApi
      * @param  string $ending_before (optional)
      * @param  string $count (optional)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \Clever\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \Swagger\Client\Model\SchoolsResponse, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \Clever\Client\Model\SchoolsResponse, HTTP status code, HTTP response headers (array of strings)
      */
     public function getSchoolsWithHttpInfo($limit = null, $starting_after = null, $ending_before = null, $count = null)
     {
-        $returnType = '\Swagger\Client\Model\SchoolsResponse';
+        $returnType = '\Clever\Client\Model\SchoolsResponse';
         $request = $this->getSchoolsRequest($limit, $starting_after, $ending_before, $count);
 
         try {
@@ -6965,7 +6965,7 @@ class DataApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\SchoolsResponse',
+                        '\Clever\Client\Model\SchoolsResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -7013,7 +7013,7 @@ class DataApi
      */
     public function getSchoolsAsyncWithHttpInfo($limit = null, $starting_after = null, $ending_before = null, $count = null)
     {
-        $returnType = '\Swagger\Client\Model\SchoolsResponse';
+        $returnType = '\Clever\Client\Model\SchoolsResponse';
         $request = $this->getSchoolsRequest($limit, $starting_after, $ending_before, $count);
 
         return $this->client
@@ -7168,9 +7168,9 @@ class DataApi
      * @param  string $starting_after starting_after (optional)
      * @param  string $ending_before ending_before (optional)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \Clever\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \Swagger\Client\Model\SchoolsResponse
+     * @return \Clever\Client\Model\SchoolsResponse
      */
     public function getSchoolsForSchoolAdmin($id, $limit = null, $starting_after = null, $ending_before = null)
     {
@@ -7186,13 +7186,13 @@ class DataApi
      * @param  string $starting_after (optional)
      * @param  string $ending_before (optional)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \Clever\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \Swagger\Client\Model\SchoolsResponse, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \Clever\Client\Model\SchoolsResponse, HTTP status code, HTTP response headers (array of strings)
      */
     public function getSchoolsForSchoolAdminWithHttpInfo($id, $limit = null, $starting_after = null, $ending_before = null)
     {
-        $returnType = '\Swagger\Client\Model\SchoolsResponse';
+        $returnType = '\Clever\Client\Model\SchoolsResponse';
         $request = $this->getSchoolsForSchoolAdminRequest($id, $limit, $starting_after, $ending_before);
 
         try {
@@ -7244,7 +7244,7 @@ class DataApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\SchoolsResponse',
+                        '\Clever\Client\Model\SchoolsResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -7252,7 +7252,7 @@ class DataApi
                 case 404:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\NotFound',
+                        '\Clever\Client\Model\NotFound',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -7300,7 +7300,7 @@ class DataApi
      */
     public function getSchoolsForSchoolAdminAsyncWithHttpInfo($id, $limit = null, $starting_after = null, $ending_before = null)
     {
-        $returnType = '\Swagger\Client\Model\SchoolsResponse';
+        $returnType = '\Clever\Client\Model\SchoolsResponse';
         $request = $this->getSchoolsForSchoolAdminRequest($id, $limit, $starting_after, $ending_before);
 
         return $this->client
@@ -7465,9 +7465,9 @@ class DataApi
      * @param  string $starting_after starting_after (optional)
      * @param  string $ending_before ending_before (optional)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \Clever\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \Swagger\Client\Model\SchoolsResponse
+     * @return \Clever\Client\Model\SchoolsResponse
      */
     public function getSchoolsForStudent($id, $limit = null, $starting_after = null, $ending_before = null)
     {
@@ -7483,13 +7483,13 @@ class DataApi
      * @param  string $starting_after (optional)
      * @param  string $ending_before (optional)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \Clever\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \Swagger\Client\Model\SchoolsResponse, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \Clever\Client\Model\SchoolsResponse, HTTP status code, HTTP response headers (array of strings)
      */
     public function getSchoolsForStudentWithHttpInfo($id, $limit = null, $starting_after = null, $ending_before = null)
     {
-        $returnType = '\Swagger\Client\Model\SchoolsResponse';
+        $returnType = '\Clever\Client\Model\SchoolsResponse';
         $request = $this->getSchoolsForStudentRequest($id, $limit, $starting_after, $ending_before);
 
         try {
@@ -7541,7 +7541,7 @@ class DataApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\SchoolsResponse',
+                        '\Clever\Client\Model\SchoolsResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -7549,7 +7549,7 @@ class DataApi
                 case 404:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\NotFound',
+                        '\Clever\Client\Model\NotFound',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -7597,7 +7597,7 @@ class DataApi
      */
     public function getSchoolsForStudentAsyncWithHttpInfo($id, $limit = null, $starting_after = null, $ending_before = null)
     {
-        $returnType = '\Swagger\Client\Model\SchoolsResponse';
+        $returnType = '\Clever\Client\Model\SchoolsResponse';
         $request = $this->getSchoolsForStudentRequest($id, $limit, $starting_after, $ending_before);
 
         return $this->client
@@ -7762,9 +7762,9 @@ class DataApi
      * @param  string $starting_after starting_after (optional)
      * @param  string $ending_before ending_before (optional)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \Clever\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \Swagger\Client\Model\SchoolsResponse
+     * @return \Clever\Client\Model\SchoolsResponse
      */
     public function getSchoolsForTeacher($id, $limit = null, $starting_after = null, $ending_before = null)
     {
@@ -7780,13 +7780,13 @@ class DataApi
      * @param  string $starting_after (optional)
      * @param  string $ending_before (optional)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \Clever\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \Swagger\Client\Model\SchoolsResponse, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \Clever\Client\Model\SchoolsResponse, HTTP status code, HTTP response headers (array of strings)
      */
     public function getSchoolsForTeacherWithHttpInfo($id, $limit = null, $starting_after = null, $ending_before = null)
     {
-        $returnType = '\Swagger\Client\Model\SchoolsResponse';
+        $returnType = '\Clever\Client\Model\SchoolsResponse';
         $request = $this->getSchoolsForTeacherRequest($id, $limit, $starting_after, $ending_before);
 
         try {
@@ -7838,7 +7838,7 @@ class DataApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\SchoolsResponse',
+                        '\Clever\Client\Model\SchoolsResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -7846,7 +7846,7 @@ class DataApi
                 case 404:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\NotFound',
+                        '\Clever\Client\Model\NotFound',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -7894,7 +7894,7 @@ class DataApi
      */
     public function getSchoolsForTeacherAsyncWithHttpInfo($id, $limit = null, $starting_after = null, $ending_before = null)
     {
-        $returnType = '\Swagger\Client\Model\SchoolsResponse';
+        $returnType = '\Clever\Client\Model\SchoolsResponse';
         $request = $this->getSchoolsForTeacherRequest($id, $limit, $starting_after, $ending_before);
 
         return $this->client
@@ -8056,9 +8056,9 @@ class DataApi
      *
      * @param  string $id id (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \Clever\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \Swagger\Client\Model\SectionResponse
+     * @return \Clever\Client\Model\SectionResponse
      */
     public function getSection($id)
     {
@@ -8071,13 +8071,13 @@ class DataApi
      *
      * @param  string $id (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \Clever\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \Swagger\Client\Model\SectionResponse, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \Clever\Client\Model\SectionResponse, HTTP status code, HTTP response headers (array of strings)
      */
     public function getSectionWithHttpInfo($id)
     {
-        $returnType = '\Swagger\Client\Model\SectionResponse';
+        $returnType = '\Clever\Client\Model\SectionResponse';
         $request = $this->getSectionRequest($id);
 
         try {
@@ -8129,7 +8129,7 @@ class DataApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\SectionResponse',
+                        '\Clever\Client\Model\SectionResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -8137,7 +8137,7 @@ class DataApi
                 case 404:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\NotFound',
+                        '\Clever\Client\Model\NotFound',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -8179,7 +8179,7 @@ class DataApi
      */
     public function getSectionAsyncWithHttpInfo($id)
     {
-        $returnType = '\Swagger\Client\Model\SectionResponse';
+        $returnType = '\Clever\Client\Model\SectionResponse';
         $request = $this->getSectionRequest($id);
 
         return $this->client
@@ -8329,9 +8329,9 @@ class DataApi
      * @param  string $ending_before ending_before (optional)
      * @param  string $count count (optional)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \Clever\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \Swagger\Client\Model\SectionsResponse
+     * @return \Clever\Client\Model\SectionsResponse
      */
     public function getSections($limit = null, $starting_after = null, $ending_before = null, $count = null)
     {
@@ -8347,13 +8347,13 @@ class DataApi
      * @param  string $ending_before (optional)
      * @param  string $count (optional)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \Clever\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \Swagger\Client\Model\SectionsResponse, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \Clever\Client\Model\SectionsResponse, HTTP status code, HTTP response headers (array of strings)
      */
     public function getSectionsWithHttpInfo($limit = null, $starting_after = null, $ending_before = null, $count = null)
     {
-        $returnType = '\Swagger\Client\Model\SectionsResponse';
+        $returnType = '\Clever\Client\Model\SectionsResponse';
         $request = $this->getSectionsRequest($limit, $starting_after, $ending_before, $count);
 
         try {
@@ -8405,7 +8405,7 @@ class DataApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\SectionsResponse',
+                        '\Clever\Client\Model\SectionsResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -8453,7 +8453,7 @@ class DataApi
      */
     public function getSectionsAsyncWithHttpInfo($limit = null, $starting_after = null, $ending_before = null, $count = null)
     {
-        $returnType = '\Swagger\Client\Model\SectionsResponse';
+        $returnType = '\Clever\Client\Model\SectionsResponse';
         $request = $this->getSectionsRequest($limit, $starting_after, $ending_before, $count);
 
         return $this->client
@@ -8608,9 +8608,9 @@ class DataApi
      * @param  string $starting_after starting_after (optional)
      * @param  string $ending_before ending_before (optional)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \Clever\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \Swagger\Client\Model\SectionsResponse
+     * @return \Clever\Client\Model\SectionsResponse
      */
     public function getSectionsForCourse($id, $limit = null, $starting_after = null, $ending_before = null)
     {
@@ -8626,13 +8626,13 @@ class DataApi
      * @param  string $starting_after (optional)
      * @param  string $ending_before (optional)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \Clever\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \Swagger\Client\Model\SectionsResponse, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \Clever\Client\Model\SectionsResponse, HTTP status code, HTTP response headers (array of strings)
      */
     public function getSectionsForCourseWithHttpInfo($id, $limit = null, $starting_after = null, $ending_before = null)
     {
-        $returnType = '\Swagger\Client\Model\SectionsResponse';
+        $returnType = '\Clever\Client\Model\SectionsResponse';
         $request = $this->getSectionsForCourseRequest($id, $limit, $starting_after, $ending_before);
 
         try {
@@ -8684,7 +8684,7 @@ class DataApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\SectionsResponse',
+                        '\Clever\Client\Model\SectionsResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -8692,7 +8692,7 @@ class DataApi
                 case 404:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\NotFound',
+                        '\Clever\Client\Model\NotFound',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -8740,7 +8740,7 @@ class DataApi
      */
     public function getSectionsForCourseAsyncWithHttpInfo($id, $limit = null, $starting_after = null, $ending_before = null)
     {
-        $returnType = '\Swagger\Client\Model\SectionsResponse';
+        $returnType = '\Clever\Client\Model\SectionsResponse';
         $request = $this->getSectionsForCourseRequest($id, $limit, $starting_after, $ending_before);
 
         return $this->client
@@ -8905,9 +8905,9 @@ class DataApi
      * @param  string $starting_after starting_after (optional)
      * @param  string $ending_before ending_before (optional)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \Clever\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \Swagger\Client\Model\SectionsResponse
+     * @return \Clever\Client\Model\SectionsResponse
      */
     public function getSectionsForSchool($id, $limit = null, $starting_after = null, $ending_before = null)
     {
@@ -8923,13 +8923,13 @@ class DataApi
      * @param  string $starting_after (optional)
      * @param  string $ending_before (optional)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \Clever\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \Swagger\Client\Model\SectionsResponse, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \Clever\Client\Model\SectionsResponse, HTTP status code, HTTP response headers (array of strings)
      */
     public function getSectionsForSchoolWithHttpInfo($id, $limit = null, $starting_after = null, $ending_before = null)
     {
-        $returnType = '\Swagger\Client\Model\SectionsResponse';
+        $returnType = '\Clever\Client\Model\SectionsResponse';
         $request = $this->getSectionsForSchoolRequest($id, $limit, $starting_after, $ending_before);
 
         try {
@@ -8981,7 +8981,7 @@ class DataApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\SectionsResponse',
+                        '\Clever\Client\Model\SectionsResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -8989,7 +8989,7 @@ class DataApi
                 case 404:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\NotFound',
+                        '\Clever\Client\Model\NotFound',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -9037,7 +9037,7 @@ class DataApi
      */
     public function getSectionsForSchoolAsyncWithHttpInfo($id, $limit = null, $starting_after = null, $ending_before = null)
     {
-        $returnType = '\Swagger\Client\Model\SectionsResponse';
+        $returnType = '\Clever\Client\Model\SectionsResponse';
         $request = $this->getSectionsForSchoolRequest($id, $limit, $starting_after, $ending_before);
 
         return $this->client
@@ -9202,9 +9202,9 @@ class DataApi
      * @param  string $starting_after starting_after (optional)
      * @param  string $ending_before ending_before (optional)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \Clever\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \Swagger\Client\Model\SectionsResponse
+     * @return \Clever\Client\Model\SectionsResponse
      */
     public function getSectionsForStudent($id, $limit = null, $starting_after = null, $ending_before = null)
     {
@@ -9220,13 +9220,13 @@ class DataApi
      * @param  string $starting_after (optional)
      * @param  string $ending_before (optional)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \Clever\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \Swagger\Client\Model\SectionsResponse, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \Clever\Client\Model\SectionsResponse, HTTP status code, HTTP response headers (array of strings)
      */
     public function getSectionsForStudentWithHttpInfo($id, $limit = null, $starting_after = null, $ending_before = null)
     {
-        $returnType = '\Swagger\Client\Model\SectionsResponse';
+        $returnType = '\Clever\Client\Model\SectionsResponse';
         $request = $this->getSectionsForStudentRequest($id, $limit, $starting_after, $ending_before);
 
         try {
@@ -9278,7 +9278,7 @@ class DataApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\SectionsResponse',
+                        '\Clever\Client\Model\SectionsResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -9286,7 +9286,7 @@ class DataApi
                 case 404:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\NotFound',
+                        '\Clever\Client\Model\NotFound',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -9334,7 +9334,7 @@ class DataApi
      */
     public function getSectionsForStudentAsyncWithHttpInfo($id, $limit = null, $starting_after = null, $ending_before = null)
     {
-        $returnType = '\Swagger\Client\Model\SectionsResponse';
+        $returnType = '\Clever\Client\Model\SectionsResponse';
         $request = $this->getSectionsForStudentRequest($id, $limit, $starting_after, $ending_before);
 
         return $this->client
@@ -9499,9 +9499,9 @@ class DataApi
      * @param  string $starting_after starting_after (optional)
      * @param  string $ending_before ending_before (optional)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \Clever\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \Swagger\Client\Model\SectionsResponse
+     * @return \Clever\Client\Model\SectionsResponse
      */
     public function getSectionsForTeacher($id, $limit = null, $starting_after = null, $ending_before = null)
     {
@@ -9517,13 +9517,13 @@ class DataApi
      * @param  string $starting_after (optional)
      * @param  string $ending_before (optional)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \Clever\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \Swagger\Client\Model\SectionsResponse, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \Clever\Client\Model\SectionsResponse, HTTP status code, HTTP response headers (array of strings)
      */
     public function getSectionsForTeacherWithHttpInfo($id, $limit = null, $starting_after = null, $ending_before = null)
     {
-        $returnType = '\Swagger\Client\Model\SectionsResponse';
+        $returnType = '\Clever\Client\Model\SectionsResponse';
         $request = $this->getSectionsForTeacherRequest($id, $limit, $starting_after, $ending_before);
 
         try {
@@ -9575,7 +9575,7 @@ class DataApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\SectionsResponse',
+                        '\Clever\Client\Model\SectionsResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -9583,7 +9583,7 @@ class DataApi
                 case 404:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\NotFound',
+                        '\Clever\Client\Model\NotFound',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -9631,7 +9631,7 @@ class DataApi
      */
     public function getSectionsForTeacherAsyncWithHttpInfo($id, $limit = null, $starting_after = null, $ending_before = null)
     {
-        $returnType = '\Swagger\Client\Model\SectionsResponse';
+        $returnType = '\Clever\Client\Model\SectionsResponse';
         $request = $this->getSectionsForTeacherRequest($id, $limit, $starting_after, $ending_before);
 
         return $this->client
@@ -9796,9 +9796,9 @@ class DataApi
      * @param  string $starting_after starting_after (optional)
      * @param  string $ending_before ending_before (optional)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \Clever\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \Swagger\Client\Model\SectionsResponse
+     * @return \Clever\Client\Model\SectionsResponse
      */
     public function getSectionsForTerm($id, $limit = null, $starting_after = null, $ending_before = null)
     {
@@ -9814,13 +9814,13 @@ class DataApi
      * @param  string $starting_after (optional)
      * @param  string $ending_before (optional)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \Clever\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \Swagger\Client\Model\SectionsResponse, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \Clever\Client\Model\SectionsResponse, HTTP status code, HTTP response headers (array of strings)
      */
     public function getSectionsForTermWithHttpInfo($id, $limit = null, $starting_after = null, $ending_before = null)
     {
-        $returnType = '\Swagger\Client\Model\SectionsResponse';
+        $returnType = '\Clever\Client\Model\SectionsResponse';
         $request = $this->getSectionsForTermRequest($id, $limit, $starting_after, $ending_before);
 
         try {
@@ -9872,7 +9872,7 @@ class DataApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\SectionsResponse',
+                        '\Clever\Client\Model\SectionsResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -9880,7 +9880,7 @@ class DataApi
                 case 404:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\NotFound',
+                        '\Clever\Client\Model\NotFound',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -9928,7 +9928,7 @@ class DataApi
      */
     public function getSectionsForTermAsyncWithHttpInfo($id, $limit = null, $starting_after = null, $ending_before = null)
     {
-        $returnType = '\Swagger\Client\Model\SectionsResponse';
+        $returnType = '\Clever\Client\Model\SectionsResponse';
         $request = $this->getSectionsForTermRequest($id, $limit, $starting_after, $ending_before);
 
         return $this->client
@@ -10090,9 +10090,9 @@ class DataApi
      *
      * @param  string $id id (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \Clever\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \Swagger\Client\Model\StudentResponse
+     * @return \Clever\Client\Model\StudentResponse
      */
     public function getStudent($id)
     {
@@ -10105,13 +10105,13 @@ class DataApi
      *
      * @param  string $id (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \Clever\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \Swagger\Client\Model\StudentResponse, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \Clever\Client\Model\StudentResponse, HTTP status code, HTTP response headers (array of strings)
      */
     public function getStudentWithHttpInfo($id)
     {
-        $returnType = '\Swagger\Client\Model\StudentResponse';
+        $returnType = '\Clever\Client\Model\StudentResponse';
         $request = $this->getStudentRequest($id);
 
         try {
@@ -10163,7 +10163,7 @@ class DataApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\StudentResponse',
+                        '\Clever\Client\Model\StudentResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -10171,7 +10171,7 @@ class DataApi
                 case 404:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\NotFound',
+                        '\Clever\Client\Model\NotFound',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -10213,7 +10213,7 @@ class DataApi
      */
     public function getStudentAsyncWithHttpInfo($id)
     {
-        $returnType = '\Swagger\Client\Model\StudentResponse';
+        $returnType = '\Clever\Client\Model\StudentResponse';
         $request = $this->getStudentRequest($id);
 
         return $this->client
@@ -10363,9 +10363,9 @@ class DataApi
      * @param  string $ending_before ending_before (optional)
      * @param  string $count count (optional)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \Clever\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \Swagger\Client\Model\StudentsResponse
+     * @return \Clever\Client\Model\StudentsResponse
      */
     public function getStudents($limit = null, $starting_after = null, $ending_before = null, $count = null)
     {
@@ -10381,13 +10381,13 @@ class DataApi
      * @param  string $ending_before (optional)
      * @param  string $count (optional)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \Clever\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \Swagger\Client\Model\StudentsResponse, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \Clever\Client\Model\StudentsResponse, HTTP status code, HTTP response headers (array of strings)
      */
     public function getStudentsWithHttpInfo($limit = null, $starting_after = null, $ending_before = null, $count = null)
     {
-        $returnType = '\Swagger\Client\Model\StudentsResponse';
+        $returnType = '\Clever\Client\Model\StudentsResponse';
         $request = $this->getStudentsRequest($limit, $starting_after, $ending_before, $count);
 
         try {
@@ -10439,7 +10439,7 @@ class DataApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\StudentsResponse',
+                        '\Clever\Client\Model\StudentsResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -10487,7 +10487,7 @@ class DataApi
      */
     public function getStudentsAsyncWithHttpInfo($limit = null, $starting_after = null, $ending_before = null, $count = null)
     {
-        $returnType = '\Swagger\Client\Model\StudentsResponse';
+        $returnType = '\Clever\Client\Model\StudentsResponse';
         $request = $this->getStudentsRequest($limit, $starting_after, $ending_before, $count);
 
         return $this->client
@@ -10642,9 +10642,9 @@ class DataApi
      * @param  string $starting_after starting_after (optional)
      * @param  string $ending_before ending_before (optional)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \Clever\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \Swagger\Client\Model\StudentsResponse
+     * @return \Clever\Client\Model\StudentsResponse
      */
     public function getStudentsForContact($id, $limit = null, $starting_after = null, $ending_before = null)
     {
@@ -10660,13 +10660,13 @@ class DataApi
      * @param  string $starting_after (optional)
      * @param  string $ending_before (optional)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \Clever\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \Swagger\Client\Model\StudentsResponse, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \Clever\Client\Model\StudentsResponse, HTTP status code, HTTP response headers (array of strings)
      */
     public function getStudentsForContactWithHttpInfo($id, $limit = null, $starting_after = null, $ending_before = null)
     {
-        $returnType = '\Swagger\Client\Model\StudentsResponse';
+        $returnType = '\Clever\Client\Model\StudentsResponse';
         $request = $this->getStudentsForContactRequest($id, $limit, $starting_after, $ending_before);
 
         try {
@@ -10718,7 +10718,7 @@ class DataApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\StudentsResponse',
+                        '\Clever\Client\Model\StudentsResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -10766,7 +10766,7 @@ class DataApi
      */
     public function getStudentsForContactAsyncWithHttpInfo($id, $limit = null, $starting_after = null, $ending_before = null)
     {
-        $returnType = '\Swagger\Client\Model\StudentsResponse';
+        $returnType = '\Clever\Client\Model\StudentsResponse';
         $request = $this->getStudentsForContactRequest($id, $limit, $starting_after, $ending_before);
 
         return $this->client
@@ -10931,9 +10931,9 @@ class DataApi
      * @param  string $starting_after starting_after (optional)
      * @param  string $ending_before ending_before (optional)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \Clever\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \Swagger\Client\Model\StudentsResponse
+     * @return \Clever\Client\Model\StudentsResponse
      */
     public function getStudentsForSchool($id, $limit = null, $starting_after = null, $ending_before = null)
     {
@@ -10949,13 +10949,13 @@ class DataApi
      * @param  string $starting_after (optional)
      * @param  string $ending_before (optional)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \Clever\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \Swagger\Client\Model\StudentsResponse, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \Clever\Client\Model\StudentsResponse, HTTP status code, HTTP response headers (array of strings)
      */
     public function getStudentsForSchoolWithHttpInfo($id, $limit = null, $starting_after = null, $ending_before = null)
     {
-        $returnType = '\Swagger\Client\Model\StudentsResponse';
+        $returnType = '\Clever\Client\Model\StudentsResponse';
         $request = $this->getStudentsForSchoolRequest($id, $limit, $starting_after, $ending_before);
 
         try {
@@ -11007,7 +11007,7 @@ class DataApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\StudentsResponse',
+                        '\Clever\Client\Model\StudentsResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -11015,7 +11015,7 @@ class DataApi
                 case 404:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\NotFound',
+                        '\Clever\Client\Model\NotFound',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -11063,7 +11063,7 @@ class DataApi
      */
     public function getStudentsForSchoolAsyncWithHttpInfo($id, $limit = null, $starting_after = null, $ending_before = null)
     {
-        $returnType = '\Swagger\Client\Model\StudentsResponse';
+        $returnType = '\Clever\Client\Model\StudentsResponse';
         $request = $this->getStudentsForSchoolRequest($id, $limit, $starting_after, $ending_before);
 
         return $this->client
@@ -11228,9 +11228,9 @@ class DataApi
      * @param  string $starting_after starting_after (optional)
      * @param  string $ending_before ending_before (optional)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \Clever\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \Swagger\Client\Model\StudentsResponse
+     * @return \Clever\Client\Model\StudentsResponse
      */
     public function getStudentsForSection($id, $limit = null, $starting_after = null, $ending_before = null)
     {
@@ -11246,13 +11246,13 @@ class DataApi
      * @param  string $starting_after (optional)
      * @param  string $ending_before (optional)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \Clever\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \Swagger\Client\Model\StudentsResponse, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \Clever\Client\Model\StudentsResponse, HTTP status code, HTTP response headers (array of strings)
      */
     public function getStudentsForSectionWithHttpInfo($id, $limit = null, $starting_after = null, $ending_before = null)
     {
-        $returnType = '\Swagger\Client\Model\StudentsResponse';
+        $returnType = '\Clever\Client\Model\StudentsResponse';
         $request = $this->getStudentsForSectionRequest($id, $limit, $starting_after, $ending_before);
 
         try {
@@ -11304,7 +11304,7 @@ class DataApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\StudentsResponse',
+                        '\Clever\Client\Model\StudentsResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -11312,7 +11312,7 @@ class DataApi
                 case 404:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\NotFound',
+                        '\Clever\Client\Model\NotFound',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -11360,7 +11360,7 @@ class DataApi
      */
     public function getStudentsForSectionAsyncWithHttpInfo($id, $limit = null, $starting_after = null, $ending_before = null)
     {
-        $returnType = '\Swagger\Client\Model\StudentsResponse';
+        $returnType = '\Clever\Client\Model\StudentsResponse';
         $request = $this->getStudentsForSectionRequest($id, $limit, $starting_after, $ending_before);
 
         return $this->client
@@ -11525,9 +11525,9 @@ class DataApi
      * @param  string $starting_after starting_after (optional)
      * @param  string $ending_before ending_before (optional)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \Clever\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \Swagger\Client\Model\StudentsResponse
+     * @return \Clever\Client\Model\StudentsResponse
      */
     public function getStudentsForTeacher($id, $limit = null, $starting_after = null, $ending_before = null)
     {
@@ -11543,13 +11543,13 @@ class DataApi
      * @param  string $starting_after (optional)
      * @param  string $ending_before (optional)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \Clever\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \Swagger\Client\Model\StudentsResponse, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \Clever\Client\Model\StudentsResponse, HTTP status code, HTTP response headers (array of strings)
      */
     public function getStudentsForTeacherWithHttpInfo($id, $limit = null, $starting_after = null, $ending_before = null)
     {
-        $returnType = '\Swagger\Client\Model\StudentsResponse';
+        $returnType = '\Clever\Client\Model\StudentsResponse';
         $request = $this->getStudentsForTeacherRequest($id, $limit, $starting_after, $ending_before);
 
         try {
@@ -11601,7 +11601,7 @@ class DataApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\StudentsResponse',
+                        '\Clever\Client\Model\StudentsResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -11609,7 +11609,7 @@ class DataApi
                 case 404:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\NotFound',
+                        '\Clever\Client\Model\NotFound',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -11657,7 +11657,7 @@ class DataApi
      */
     public function getStudentsForTeacherAsyncWithHttpInfo($id, $limit = null, $starting_after = null, $ending_before = null)
     {
-        $returnType = '\Swagger\Client\Model\StudentsResponse';
+        $returnType = '\Clever\Client\Model\StudentsResponse';
         $request = $this->getStudentsForTeacherRequest($id, $limit, $starting_after, $ending_before);
 
         return $this->client
@@ -11819,9 +11819,9 @@ class DataApi
      *
      * @param  string $id id (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \Clever\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \Swagger\Client\Model\TeacherResponse
+     * @return \Clever\Client\Model\TeacherResponse
      */
     public function getTeacher($id)
     {
@@ -11834,13 +11834,13 @@ class DataApi
      *
      * @param  string $id (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \Clever\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \Swagger\Client\Model\TeacherResponse, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \Clever\Client\Model\TeacherResponse, HTTP status code, HTTP response headers (array of strings)
      */
     public function getTeacherWithHttpInfo($id)
     {
-        $returnType = '\Swagger\Client\Model\TeacherResponse';
+        $returnType = '\Clever\Client\Model\TeacherResponse';
         $request = $this->getTeacherRequest($id);
 
         try {
@@ -11892,7 +11892,7 @@ class DataApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\TeacherResponse',
+                        '\Clever\Client\Model\TeacherResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -11900,7 +11900,7 @@ class DataApi
                 case 404:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\NotFound',
+                        '\Clever\Client\Model\NotFound',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -11942,7 +11942,7 @@ class DataApi
      */
     public function getTeacherAsyncWithHttpInfo($id)
     {
-        $returnType = '\Swagger\Client\Model\TeacherResponse';
+        $returnType = '\Clever\Client\Model\TeacherResponse';
         $request = $this->getTeacherRequest($id);
 
         return $this->client
@@ -12089,9 +12089,9 @@ class DataApi
      *
      * @param  string $id id (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \Clever\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \Swagger\Client\Model\TeacherResponse
+     * @return \Clever\Client\Model\TeacherResponse
      */
     public function getTeacherForSection($id)
     {
@@ -12104,13 +12104,13 @@ class DataApi
      *
      * @param  string $id (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \Clever\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \Swagger\Client\Model\TeacherResponse, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \Clever\Client\Model\TeacherResponse, HTTP status code, HTTP response headers (array of strings)
      */
     public function getTeacherForSectionWithHttpInfo($id)
     {
-        $returnType = '\Swagger\Client\Model\TeacherResponse';
+        $returnType = '\Clever\Client\Model\TeacherResponse';
         $request = $this->getTeacherForSectionRequest($id);
 
         try {
@@ -12162,7 +12162,7 @@ class DataApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\TeacherResponse',
+                        '\Clever\Client\Model\TeacherResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -12170,7 +12170,7 @@ class DataApi
                 case 404:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\NotFound',
+                        '\Clever\Client\Model\NotFound',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -12212,7 +12212,7 @@ class DataApi
      */
     public function getTeacherForSectionAsyncWithHttpInfo($id)
     {
-        $returnType = '\Swagger\Client\Model\TeacherResponse';
+        $returnType = '\Clever\Client\Model\TeacherResponse';
         $request = $this->getTeacherForSectionRequest($id);
 
         return $this->client
@@ -12362,9 +12362,9 @@ class DataApi
      * @param  string $ending_before ending_before (optional)
      * @param  string $count count (optional)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \Clever\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \Swagger\Client\Model\TeachersResponse
+     * @return \Clever\Client\Model\TeachersResponse
      */
     public function getTeachers($limit = null, $starting_after = null, $ending_before = null, $count = null)
     {
@@ -12380,13 +12380,13 @@ class DataApi
      * @param  string $ending_before (optional)
      * @param  string $count (optional)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \Clever\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \Swagger\Client\Model\TeachersResponse, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \Clever\Client\Model\TeachersResponse, HTTP status code, HTTP response headers (array of strings)
      */
     public function getTeachersWithHttpInfo($limit = null, $starting_after = null, $ending_before = null, $count = null)
     {
-        $returnType = '\Swagger\Client\Model\TeachersResponse';
+        $returnType = '\Clever\Client\Model\TeachersResponse';
         $request = $this->getTeachersRequest($limit, $starting_after, $ending_before, $count);
 
         try {
@@ -12438,7 +12438,7 @@ class DataApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\TeachersResponse',
+                        '\Clever\Client\Model\TeachersResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -12486,7 +12486,7 @@ class DataApi
      */
     public function getTeachersAsyncWithHttpInfo($limit = null, $starting_after = null, $ending_before = null, $count = null)
     {
-        $returnType = '\Swagger\Client\Model\TeachersResponse';
+        $returnType = '\Clever\Client\Model\TeachersResponse';
         $request = $this->getTeachersRequest($limit, $starting_after, $ending_before, $count);
 
         return $this->client
@@ -12641,9 +12641,9 @@ class DataApi
      * @param  string $starting_after starting_after (optional)
      * @param  string $ending_before ending_before (optional)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \Clever\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \Swagger\Client\Model\TeachersResponse
+     * @return \Clever\Client\Model\TeachersResponse
      */
     public function getTeachersForSchool($id, $limit = null, $starting_after = null, $ending_before = null)
     {
@@ -12659,13 +12659,13 @@ class DataApi
      * @param  string $starting_after (optional)
      * @param  string $ending_before (optional)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \Clever\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \Swagger\Client\Model\TeachersResponse, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \Clever\Client\Model\TeachersResponse, HTTP status code, HTTP response headers (array of strings)
      */
     public function getTeachersForSchoolWithHttpInfo($id, $limit = null, $starting_after = null, $ending_before = null)
     {
-        $returnType = '\Swagger\Client\Model\TeachersResponse';
+        $returnType = '\Clever\Client\Model\TeachersResponse';
         $request = $this->getTeachersForSchoolRequest($id, $limit, $starting_after, $ending_before);
 
         try {
@@ -12717,7 +12717,7 @@ class DataApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\TeachersResponse',
+                        '\Clever\Client\Model\TeachersResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -12725,7 +12725,7 @@ class DataApi
                 case 404:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\NotFound',
+                        '\Clever\Client\Model\NotFound',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -12773,7 +12773,7 @@ class DataApi
      */
     public function getTeachersForSchoolAsyncWithHttpInfo($id, $limit = null, $starting_after = null, $ending_before = null)
     {
-        $returnType = '\Swagger\Client\Model\TeachersResponse';
+        $returnType = '\Clever\Client\Model\TeachersResponse';
         $request = $this->getTeachersForSchoolRequest($id, $limit, $starting_after, $ending_before);
 
         return $this->client
@@ -12938,9 +12938,9 @@ class DataApi
      * @param  string $starting_after starting_after (optional)
      * @param  string $ending_before ending_before (optional)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \Clever\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \Swagger\Client\Model\TeachersResponse
+     * @return \Clever\Client\Model\TeachersResponse
      */
     public function getTeachersForSection($id, $limit = null, $starting_after = null, $ending_before = null)
     {
@@ -12956,13 +12956,13 @@ class DataApi
      * @param  string $starting_after (optional)
      * @param  string $ending_before (optional)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \Clever\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \Swagger\Client\Model\TeachersResponse, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \Clever\Client\Model\TeachersResponse, HTTP status code, HTTP response headers (array of strings)
      */
     public function getTeachersForSectionWithHttpInfo($id, $limit = null, $starting_after = null, $ending_before = null)
     {
-        $returnType = '\Swagger\Client\Model\TeachersResponse';
+        $returnType = '\Clever\Client\Model\TeachersResponse';
         $request = $this->getTeachersForSectionRequest($id, $limit, $starting_after, $ending_before);
 
         try {
@@ -13014,7 +13014,7 @@ class DataApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\TeachersResponse',
+                        '\Clever\Client\Model\TeachersResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -13022,7 +13022,7 @@ class DataApi
                 case 404:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\NotFound',
+                        '\Clever\Client\Model\NotFound',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -13070,7 +13070,7 @@ class DataApi
      */
     public function getTeachersForSectionAsyncWithHttpInfo($id, $limit = null, $starting_after = null, $ending_before = null)
     {
-        $returnType = '\Swagger\Client\Model\TeachersResponse';
+        $returnType = '\Clever\Client\Model\TeachersResponse';
         $request = $this->getTeachersForSectionRequest($id, $limit, $starting_after, $ending_before);
 
         return $this->client
@@ -13235,9 +13235,9 @@ class DataApi
      * @param  string $starting_after starting_after (optional)
      * @param  string $ending_before ending_before (optional)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \Clever\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \Swagger\Client\Model\TeachersResponse
+     * @return \Clever\Client\Model\TeachersResponse
      */
     public function getTeachersForStudent($id, $limit = null, $starting_after = null, $ending_before = null)
     {
@@ -13253,13 +13253,13 @@ class DataApi
      * @param  string $starting_after (optional)
      * @param  string $ending_before (optional)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \Clever\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \Swagger\Client\Model\TeachersResponse, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \Clever\Client\Model\TeachersResponse, HTTP status code, HTTP response headers (array of strings)
      */
     public function getTeachersForStudentWithHttpInfo($id, $limit = null, $starting_after = null, $ending_before = null)
     {
-        $returnType = '\Swagger\Client\Model\TeachersResponse';
+        $returnType = '\Clever\Client\Model\TeachersResponse';
         $request = $this->getTeachersForStudentRequest($id, $limit, $starting_after, $ending_before);
 
         try {
@@ -13311,7 +13311,7 @@ class DataApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\TeachersResponse',
+                        '\Clever\Client\Model\TeachersResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -13319,7 +13319,7 @@ class DataApi
                 case 404:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\NotFound',
+                        '\Clever\Client\Model\NotFound',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -13367,7 +13367,7 @@ class DataApi
      */
     public function getTeachersForStudentAsyncWithHttpInfo($id, $limit = null, $starting_after = null, $ending_before = null)
     {
-        $returnType = '\Swagger\Client\Model\TeachersResponse';
+        $returnType = '\Clever\Client\Model\TeachersResponse';
         $request = $this->getTeachersForStudentRequest($id, $limit, $starting_after, $ending_before);
 
         return $this->client
@@ -13529,9 +13529,9 @@ class DataApi
      *
      * @param  string $id id (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \Clever\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \Swagger\Client\Model\TermResponse
+     * @return \Clever\Client\Model\TermResponse
      */
     public function getTerm($id)
     {
@@ -13544,13 +13544,13 @@ class DataApi
      *
      * @param  string $id (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \Clever\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \Swagger\Client\Model\TermResponse, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \Clever\Client\Model\TermResponse, HTTP status code, HTTP response headers (array of strings)
      */
     public function getTermWithHttpInfo($id)
     {
-        $returnType = '\Swagger\Client\Model\TermResponse';
+        $returnType = '\Clever\Client\Model\TermResponse';
         $request = $this->getTermRequest($id);
 
         try {
@@ -13602,7 +13602,7 @@ class DataApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\TermResponse',
+                        '\Clever\Client\Model\TermResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -13610,7 +13610,7 @@ class DataApi
                 case 404:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\NotFound',
+                        '\Clever\Client\Model\NotFound',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -13652,7 +13652,7 @@ class DataApi
      */
     public function getTermAsyncWithHttpInfo($id)
     {
-        $returnType = '\Swagger\Client\Model\TermResponse';
+        $returnType = '\Clever\Client\Model\TermResponse';
         $request = $this->getTermRequest($id);
 
         return $this->client
@@ -13799,9 +13799,9 @@ class DataApi
      *
      * @param  string $id id (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \Clever\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \Swagger\Client\Model\TermResponse
+     * @return \Clever\Client\Model\TermResponse
      */
     public function getTermForSection($id)
     {
@@ -13814,13 +13814,13 @@ class DataApi
      *
      * @param  string $id (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \Clever\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \Swagger\Client\Model\TermResponse, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \Clever\Client\Model\TermResponse, HTTP status code, HTTP response headers (array of strings)
      */
     public function getTermForSectionWithHttpInfo($id)
     {
-        $returnType = '\Swagger\Client\Model\TermResponse';
+        $returnType = '\Clever\Client\Model\TermResponse';
         $request = $this->getTermForSectionRequest($id);
 
         try {
@@ -13872,7 +13872,7 @@ class DataApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\TermResponse',
+                        '\Clever\Client\Model\TermResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -13880,7 +13880,7 @@ class DataApi
                 case 404:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\NotFound',
+                        '\Clever\Client\Model\NotFound',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -13922,7 +13922,7 @@ class DataApi
      */
     public function getTermForSectionAsyncWithHttpInfo($id)
     {
-        $returnType = '\Swagger\Client\Model\TermResponse';
+        $returnType = '\Clever\Client\Model\TermResponse';
         $request = $this->getTermForSectionRequest($id);
 
         return $this->client
@@ -14072,9 +14072,9 @@ class DataApi
      * @param  string $ending_before ending_before (optional)
      * @param  string $count count (optional)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \Clever\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \Swagger\Client\Model\TermsResponse
+     * @return \Clever\Client\Model\TermsResponse
      */
     public function getTerms($limit = null, $starting_after = null, $ending_before = null, $count = null)
     {
@@ -14090,13 +14090,13 @@ class DataApi
      * @param  string $ending_before (optional)
      * @param  string $count (optional)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \Clever\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \Swagger\Client\Model\TermsResponse, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \Clever\Client\Model\TermsResponse, HTTP status code, HTTP response headers (array of strings)
      */
     public function getTermsWithHttpInfo($limit = null, $starting_after = null, $ending_before = null, $count = null)
     {
-        $returnType = '\Swagger\Client\Model\TermsResponse';
+        $returnType = '\Clever\Client\Model\TermsResponse';
         $request = $this->getTermsRequest($limit, $starting_after, $ending_before, $count);
 
         try {
@@ -14148,7 +14148,7 @@ class DataApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\TermsResponse',
+                        '\Clever\Client\Model\TermsResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -14196,7 +14196,7 @@ class DataApi
      */
     public function getTermsAsyncWithHttpInfo($limit = null, $starting_after = null, $ending_before = null, $count = null)
     {
-        $returnType = '\Swagger\Client\Model\TermsResponse';
+        $returnType = '\Clever\Client\Model\TermsResponse';
         $request = $this->getTermsRequest($limit, $starting_after, $ending_before, $count);
 
         return $this->client

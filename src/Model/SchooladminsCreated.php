@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  Swagger\Client
+ * @package  Clever\Client
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -26,14 +26,14 @@
  * Do not edit the class manually.
  */
 
-namespace Swagger\Client\Model;
-use \Swagger\Client\ObjectSerializer;
+namespace Clever\Client\Model;
+use \Clever\Client\ObjectSerializer;
 
 /**
  * SchooladminsCreated Class Doc Comment
  *
  * @category Class
- * @package  Swagger\Client
+ * @package  Clever\Client
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -54,7 +54,7 @@ class SchooladminsCreated extends Event
       * @var string[]
       */
     protected static $swaggerTypes = [
-        'data' => '\Swagger\Client\Model\SchoolAdminObject'    ];
+        'data' => '\Clever\Client\Model\SchoolAdminObject'    ];
 
     /**
       * Array of property to format mappings. Used for (de)serialization
@@ -193,7 +193,7 @@ class SchooladminsCreated extends Event
     /**
      * Gets data
      *
-     * @return \Swagger\Client\Model\SchoolAdminObject
+     * @return \Clever\Client\Model\SchoolAdminObject
      */
     public function getData()
     {
@@ -203,7 +203,7 @@ class SchooladminsCreated extends Event
     /**
      * Sets data
      *
-     * @param \Swagger\Client\Model\SchoolAdminObject $data data
+     * @param \Clever\Client\Model\SchoolAdminObject $data data
      *
      * @return $this
      */

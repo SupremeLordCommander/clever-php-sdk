@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  Swagger\Client
+ * @package  Clever\Client
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -26,16 +26,16 @@
  * Do not edit the class manually.
  */
 
-namespace Swagger\Client\Model;
+namespace Clever\Client\Model;
 
 use \ArrayAccess;
-use \Swagger\Client\ObjectSerializer;
+use \Clever\Client\ObjectSerializer;
 
 /**
  * TeachersResponse Class Doc Comment
  *
  * @category Class
- * @package  Swagger\Client
+ * @package  Clever\Client
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -56,8 +56,8 @@ class TeachersResponse implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerTypes = [
-        'data' => '\Swagger\Client\Model\TeacherResponse[]',
-'links' => '\Swagger\Client\Model\Link[]'    ];
+        'data' => '\Clever\Client\Model\TeacherResponse[]',
+'links' => '\Clever\Client\Model\Link[]'    ];
 
     /**
       * Array of property to format mappings. Used for (de)serialization
@@ -205,7 +205,7 @@ class TeachersResponse implements ModelInterface, ArrayAccess
     /**
      * Gets data
      *
-     * @return \Swagger\Client\Model\TeacherResponse[]
+     * @return \Clever\Client\Model\TeacherResponse[]
      */
     public function getData()
     {
@@ -215,7 +215,7 @@ class TeachersResponse implements ModelInterface, ArrayAccess
     /**
      * Sets data
      *
-     * @param \Swagger\Client\Model\TeacherResponse[] $data data
+     * @param \Clever\Client\Model\TeacherResponse[] $data data
      *
      * @return $this
      */
@@ -229,7 +229,7 @@ class TeachersResponse implements ModelInterface, ArrayAccess
     /**
      * Gets links
      *
-     * @return \Swagger\Client\Model\Link[]
+     * @return \Clever\Client\Model\Link[]
      */
     public function getLinks()
     {
@@ -239,7 +239,7 @@ class TeachersResponse implements ModelInterface, ArrayAccess
     /**
      * Sets links
      *
-     * @param \Swagger\Client\Model\Link[] $links links
+     * @param \Clever\Client\Model\Link[] $links links
      *
      * @return $this
      */
