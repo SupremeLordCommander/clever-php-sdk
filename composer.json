@@ -1,6 +1,6 @@
 {
     "name": "geekspeek/clever-php",
-    "description": "Composer package for OpenAPI client for OpenAPI Petstore",
+    "description": "Composer package for Clever APIs",
     "keywords": [
         "clever",
         "clever-api",
@@ -10,11 +10,11 @@
         "rest",
         "api"
     ],
-    "homepage": "https://www.clever.com",
     "license": "unlicense",
     "authors": [
         {
-            "name": "Joshua Lawrence"
+            "name": "Joshua Lawrence",
+            "homepage": "https://github.com/geekspeek"
         }
     ],
     "require": {
@@ -30,9 +30,9 @@
         "friendsofphp/php-cs-fixer": "^3.5"
     },
     "autoload": {
-        "psr-4": { "OpenAPI\\Client\\" : "lib/" }
+        "psr-4": { "Clever\\Client\\" : "src/" }
     },
     "autoload-dev": {
-        "psr-4": { "OpenAPI\\Client\\Test\\" : "test/" }
+        "psr-4": { "Clever\\Client\\Test\\" : "test/" }
     }
 }
