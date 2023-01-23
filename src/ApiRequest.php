@@ -50,10 +50,12 @@ abstract class ApiRequest {
 		$curl = curl_init();
 
 		$url = static::APIBASE . "/{$url}";
+
+
 		if($query){
 			$url = "{$url}?" . $this->encodeQuery($query);
 		}
-
+		
 		curl_setopt_array($curl, $this->getCurlOpts([
 			CURLOPT_URL => $this->utf8($url),
 		]));

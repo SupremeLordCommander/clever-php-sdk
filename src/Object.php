@@ -32,7 +32,9 @@ class Object
 
     protected function makeUrl($endpoint, $options = [])
     {
+        echo "Endpoint: ".$endpoint,"\n";
         $url = static::BASE_URL."/{$this->id}";
+        // ddng($endpoint, $url);
         if ($endpoint) {
             $url = "{$url}/{$endpoint}";
             if ($options) {
@@ -46,6 +48,7 @@ class Object
 
     function retrieve()
     {
+
         $data = call_user_func($this->pinger, $this->makeUrl(""), []);
 
         return $this->unmarshal($data);
@@ -96,7 +99,9 @@ class Object
     protected function getObjects($type, array $options = [])
     {
         if ($typedObject = $this->getTypedObject($type)) {
-            $data = call_user_func($this->pinger, $this->makeUrl($type, $options), []);
+            $url = ($type == 'events') ? 'events' : $type;
+            $data = call_user_func($this->pinger, $url, []);
+            ddng($type, $data, $this->makeUrl($type, $options), $options);
             if ( ! empty($data['data'][0]['data'])) {
                 foreach ($data["data"] as $object) {
                     $Obj    = new $typedObject($object["data"]["id"], $this->pinger);
@@ -113,7 +118,11 @@ class Object
                 $Objs[] = $Obj;
             }
 
+
             return $Objs;
+        }
+        else {
+            throw new \Exception("Invalid type: {$type}");
         }
     }
 

@@ -27,6 +27,7 @@ class District extends Object {
 	}
 
 	function getEvents(array $query = []){
+		ddng($this->getObjects(static::CLEVER_EVENT, $query));
 		return $this->getObjects(static::CLEVER_EVENT, $query);
 	}
 
