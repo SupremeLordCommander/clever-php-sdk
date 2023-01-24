@@ -32,7 +32,7 @@ class Object
 
     protected function makeUrl($endpoint, $options = [])
     {
-        echo "Endpoint: ".$endpoint,"\n";
+        // echo "Endpoint: ".$endpoint,"\n";
         $url = static::BASE_URL."/{$this->id}";
         // ddng($endpoint, $url);
         if ($endpoint) {
@@ -100,8 +100,7 @@ class Object
     {
         if ($typedObject = $this->getTypedObject($type)) {
             $url = ($type == 'events') ? 'events' : $type;
-            $data = call_user_func($this->pinger, $url, []);
-            ddng($type, $data, $this->makeUrl($type, $options), $options);
+            $data = call_user_func($this->pinger, $url, $options);
             if ( ! empty($data['data'][0]['data'])) {
                 foreach ($data["data"] as $object) {
                     $Obj    = new $typedObject($object["data"]["id"], $this->pinger);

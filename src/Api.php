@@ -54,7 +54,7 @@ class Api extends ApiRequest
 
                 return json_decode($body, true);
             });
-            
+
             return $Obj->retrieve();
         }
     }
@@ -76,13 +76,10 @@ class Api extends ApiRequest
 
     function districts()
     {
-        dd('here');
         list($body, $code) = $this->ping('districts', []);
         if ($code != 200) {
-            ddng($body, $code);
             $this->relayApiError(new ApiException($body, $code));
         }
-        ddng($body, $code);
         $data = json_decode($body, true);
 
         return $data;
@@ -102,7 +99,6 @@ class Api extends ApiRequest
     function getUrl($url) {
         list($body, $code) = $this->ping($url, []);
         $data = json_decode($body, true);
-        ddng($data);
         return $data;
     }
 
