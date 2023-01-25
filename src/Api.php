@@ -44,6 +44,9 @@ class Api extends ApiRequest
 
     function __call($name, $args)
     {
+        // if ($name =='teacher'){
+        //     ddng('teacher', $args);
+        // }
         if (isset($this->objectMap[$name])) {
             $object = $this->objectMap[$name];
             $Obj = new $object($args[0], function ($url, array $query = []) {
