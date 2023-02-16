@@ -9,7 +9,7 @@ abstract class ApiRequest {
 
 	use Log\LoggerAwareTrait;
 
-	const VERSION = '1.1.0';
+	const VERSION = '2.1.0';
 
 	const APIBASE = "https://api.clever.com/v2.1";
 
