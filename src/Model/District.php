@@ -70,7 +70,7 @@ class District implements ModelInterface, ArrayAccess
         'portal_url' => 'string',
         'login_methods' => 'string[]',
         'district_contact' => '\Clever\Client\Model\DistrictContact'
-	];
+    ];
 
     /**
       * Array of property to format mappings. Used for (de)serialization
@@ -92,7 +92,7 @@ class District implements ModelInterface, ArrayAccess
         'portal_url' => null,
         'login_methods' => null,
         'district_contact' => null
-	];
+    ];
 
     /**
      * Array of property to type mappings. Used for (de)serialization
@@ -135,7 +135,7 @@ class District implements ModelInterface, ArrayAccess
         'portal_url' => 'portal_url',
         'login_methods' => 'login_methods',
         'district_contact' => 'district_contact'
-	];
+    ];
 
     /**
      * Array of attributes to setter functions (for deserialization of responses)
@@ -157,7 +157,7 @@ class District implements ModelInterface, ArrayAccess
         'portal_url' => 'setPortalUrl',
         'login_methods' => 'setLoginMethods',
         'district_contact' => 'setDistrictContact'
-	];
+    ];
 
     /**
      * Array of attributes to getter functions (for serialization of requests)
@@ -179,7 +179,7 @@ class District implements ModelInterface, ArrayAccess
         'portal_url' => 'getPortalUrl',
         'login_methods' => 'getLoginMethods',
         'district_contact' => 'getDistrictContact'
-	];
+    ];
 
     /**
      * Array of attributes where the key is the local name,

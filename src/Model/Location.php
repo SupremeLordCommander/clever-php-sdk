@@ -62,7 +62,7 @@ class Location implements ModelInterface, ArrayAccess
         'zip' => 'string',
         'lat' => 'string',
         'lon' => 'string'
-	];
+    ];
 
     /**
       * Array of property to format mappings. Used for (de)serialization
@@ -76,7 +76,7 @@ class Location implements ModelInterface, ArrayAccess
         'zip' => null,
         'lat' => null,
         'lon' => null
-	];
+    ];
 
     /**
      * Array of property to type mappings. Used for (de)serialization
@@ -111,7 +111,7 @@ class Location implements ModelInterface, ArrayAccess
         'zip' => 'zip',
         'lat' => 'lat',
         'lon' => 'lon'
-	];
+    ];
 
     /**
      * Array of attributes to setter functions (for deserialization of responses)
@@ -125,7 +125,7 @@ class Location implements ModelInterface, ArrayAccess
         'zip' => 'setZip',
         'lat' => 'setLat',
         'lon' => 'setLon'
-	];
+    ];
 
     /**
      * Array of attributes to getter functions (for serialization of requests)
@@ -139,7 +139,7 @@ class Location implements ModelInterface, ArrayAccess
         'zip' => 'getZip',
         'lat' => 'getLat',
         'lon' => 'getLon'
-	];
+    ];
 
     /**
      * Array of attributes where the key is the local name,

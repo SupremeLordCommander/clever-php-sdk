@@ -59,7 +59,7 @@ class SchoolEnrollment implements ModelInterface, ArrayAccess
         'school' => 'string',
         'start_date' => 'string',
         'end_date' => 'string'
-	];
+    ];
 
     /**
       * Array of property to format mappings. Used for (de)serialization
@@ -70,7 +70,7 @@ class SchoolEnrollment implements ModelInterface, ArrayAccess
         'school' => null,
         'start_date' => 'datetime',
         'end_date' => 'datetime'
-	];
+    ];
 
     /**
      * Array of property to type mappings. Used for (de)serialization
@@ -102,7 +102,7 @@ class SchoolEnrollment implements ModelInterface, ArrayAccess
         'school' => 'school',
         'start_date' => 'start_date',
         'end_date' => 'end_date'
-	];
+    ];
 
     /**
      * Array of attributes to setter functions (for deserialization of responses)
@@ -113,7 +113,7 @@ class SchoolEnrollment implements ModelInterface, ArrayAccess
         'school' => 'setSchool',
         'start_date' => 'setStartDate',
         'end_date' => 'setEndDate'
-	];
+    ];
 
     /**
      * Array of attributes to getter functions (for serialization of requests)
@@ -124,7 +124,7 @@ class SchoolEnrollment implements ModelInterface, ArrayAccess
         'school' => 'getSchool',
         'start_date' => 'getStartDate',
         'end_date' => 'getEndDate'
-	];
+    ];
 
     /**
      * Array of attributes where the key is the local name,

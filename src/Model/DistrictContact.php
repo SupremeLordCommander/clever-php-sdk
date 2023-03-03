@@ -61,7 +61,7 @@ class DistrictContact implements ModelInterface, ArrayAccess
         'district' => 'string',
         'email' => 'string',
         'name' => '\Clever\Client\Model\Name'
-	];
+    ];
 
     /**
       * Array of property to format mappings. Used for (de)serialization
@@ -74,7 +74,7 @@ class DistrictContact implements ModelInterface, ArrayAccess
         'district' => null,
         'email' => null,
         'name' => null
-	];
+    ];
 
     /**
      * Array of property to type mappings. Used for (de)serialization
@@ -108,7 +108,7 @@ class DistrictContact implements ModelInterface, ArrayAccess
         'district' => 'district',
         'email' => 'email',
         'name' => 'name'
-	];
+    ];
 
     /**
      * Array of attributes to setter functions (for deserialization of responses)
@@ -121,7 +121,7 @@ class DistrictContact implements ModelInterface, ArrayAccess
         'district' => 'setDistrict',
         'email' => 'setEmail',
         'name' => 'setName'
-	];
+    ];
 
     /**
      * Array of attributes to getter functions (for serialization of requests)
@@ -134,7 +134,7 @@ class DistrictContact implements ModelInterface, ArrayAccess
         'district' => 'getDistrict',
         'email' => 'getEmail',
         'name' => 'getName'
-	];
+    ];
 
     /**
      * Array of attributes where the key is the local name,

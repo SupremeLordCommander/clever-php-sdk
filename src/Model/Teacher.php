@@ -69,7 +69,7 @@ class Teacher implements ModelInterface, ArrayAccess
         'teacher_number' => 'string',
         'title' => 'string',
         'ext' => 'object'
-	];
+    ];
 
     /**
       * Array of property to format mappings. Used for (de)serialization
@@ -90,7 +90,7 @@ class Teacher implements ModelInterface, ArrayAccess
         'teacher_number' => null,
         'title' => null,
         'ext' => null
-	];
+    ];
 
     /**
      * Array of property to type mappings. Used for (de)serialization
@@ -132,7 +132,7 @@ class Teacher implements ModelInterface, ArrayAccess
         'teacher_number' => 'teacher_number',
         'title' => 'title',
         'ext' => 'ext'
-	];
+    ];
 
     /**
      * Array of attributes to setter functions (for deserialization of responses)
@@ -153,7 +153,7 @@ class Teacher implements ModelInterface, ArrayAccess
         'teacher_number' => 'setTeacherNumber',
         'title' => 'setTitle',
         'ext' => 'setExt'
-	];
+    ];
 
     /**
      * Array of attributes to getter functions (for serialization of requests)
@@ -174,7 +174,7 @@ class Teacher implements ModelInterface, ArrayAccess
         'teacher_number' => 'getTeacherNumber',
         'title' => 'getTitle',
         'ext' => 'getExt'
-	];
+    ];
 
     /**
      * Array of attributes where the key is the local name,

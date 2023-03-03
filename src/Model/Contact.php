@@ -121,7 +121,7 @@ class Contact implements ModelInterface, ArrayAccess
         'phone_type' => 'setPhoneType',
         'sis_id' => 'setSisId',
         'student_relationships' => 'setStudentRelationships'
-];
+    ];
 
     /**
      * Array of attributes to getter functions (for serialization of requests)
@@ -134,7 +134,7 @@ class Contact implements ModelInterface, ArrayAccess
         'phone_type' => 'getPhoneType',
         'sis_id' => 'getSisId',
         'student_relationships' => 'getStudentRelationships'
-];
+    ];
 
     /**
      * Array of attributes where the key is the local name,

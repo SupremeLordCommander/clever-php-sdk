@@ -61,7 +61,7 @@ class Term implements ModelInterface, ArrayAccess
         'start_date' => 'string',
         'end_date' => 'string',
         'district' => 'string'
-	];
+    ];
 
     /**
       * Array of property to format mappings. Used for (de)serialization
@@ -74,7 +74,7 @@ class Term implements ModelInterface, ArrayAccess
         'start_date' => 'datetime',
         'end_date' => 'datetime',
         'district' => null
-	];
+    ];
 
     /**
      * Array of property to type mappings. Used for (de)serialization
@@ -108,7 +108,7 @@ class Term implements ModelInterface, ArrayAccess
         'start_date' => 'start_date',
         'end_date' => 'end_date',
         'district' => 'district'
-	];
+    ];
 
     /**
      * Array of attributes to setter functions (for deserialization of responses)
@@ -121,7 +121,7 @@ class Term implements ModelInterface, ArrayAccess
         'start_date' => 'setStartDate',
         'end_date' => 'setEndDate',
         'district' => 'setDistrict'
-	];
+    ];
 
     /**
      * Array of attributes to getter functions (for serialization of requests)
@@ -134,7 +134,7 @@ class Term implements ModelInterface, ArrayAccess
         'start_date' => 'getStartDate',
         'end_date' => 'getEndDate',
         'district' => 'getDistrict'
-	];
+    ];
 
     /**
      * Array of attributes where the key is the local name,

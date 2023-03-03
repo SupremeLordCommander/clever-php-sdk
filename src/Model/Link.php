@@ -58,7 +58,7 @@ class Link implements ModelInterface, ArrayAccess
     protected static $swaggerTypes = [
         'rel' => 'string',
         'uri' => 'string'
-	];
+    ];
 
     /**
       * Array of property to format mappings. Used for (de)serialization
@@ -68,7 +68,7 @@ class Link implements ModelInterface, ArrayAccess
     protected static $swaggerFormats = [
         'rel' => null,
         'uri' => null
-	];
+    ];
 
     /**
      * Array of property to type mappings. Used for (de)serialization
@@ -99,7 +99,7 @@ class Link implements ModelInterface, ArrayAccess
     protected static $attributeMap = [
         'rel' => 'rel',
         'uri' => 'uri'
-	];
+    ];
 
     /**
      * Array of attributes to setter functions (for deserialization of responses)
@@ -109,7 +109,7 @@ class Link implements ModelInterface, ArrayAccess
     protected static $setters = [
         'rel' => 'setRel',
         'uri' => 'setUri'
-	];
+    ];
 
     /**
      * Array of attributes to getter functions (for serialization of requests)
@@ -119,7 +119,7 @@ class Link implements ModelInterface, ArrayAccess
     protected static $getters = [
         'rel' => 'getRel',
         'uri' => 'getUri'
-	];
+    ];
 
     /**
      * Array of attributes where the key is the local name,

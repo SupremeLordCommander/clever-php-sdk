@@ -61,7 +61,7 @@ class Roles implements ModelInterface, ArrayAccess
         'staff' => '\Clever\Client\Model\Staff',
         'student' => '\Clever\Client\Model\Student',
         'teacher' => '\Clever\Client\Model\Teacher'
-	];
+    ];
 
     /**
       * Array of property to format mappings. Used for (de)serialization
@@ -74,7 +74,7 @@ class Roles implements ModelInterface, ArrayAccess
         'staff' => null,
         'student' => null,
         'teacher' => null
-	];
+    ];
 
     /**
      * Array of property to type mappings. Used for (de)serialization
@@ -108,7 +108,7 @@ class Roles implements ModelInterface, ArrayAccess
         'staff' => 'staff',
         'student' => 'student',
         'teacher' => 'teacher'
-	];
+    ];
 
     /**
      * Array of attributes to setter functions (for deserialization of responses)
@@ -121,7 +121,7 @@ class Roles implements ModelInterface, ArrayAccess
         'staff' => 'setStaff',
         'student' => 'setStudent',
         'teacher' => 'setTeacher'
-	];
+    ];
 
     /**
      * Array of attributes to getter functions (for serialization of requests)
@@ -134,7 +134,7 @@ class Roles implements ModelInterface, ArrayAccess
         'staff' => 'getStaff',
         'student' => 'getStudent',
         'teacher' => 'getTeacher'
-	];
+    ];
 
     /**
      * Array of attributes where the key is the local name,

@@ -55,7 +55,7 @@ class TermsCreated extends Event
       */
     protected static $swaggerTypes = [
         'data' => '\Clever\Client\Model\TermObject'
-	];
+    ];
 
     /**
       * Array of property to format mappings. Used for (de)serialization
@@ -64,7 +64,7 @@ class TermsCreated extends Event
       */
     protected static $swaggerFormats = [
         'data' => null
-	];
+    ];
 
     /**
      * Array of property to type mappings. Used for (de)serialization
@@ -94,7 +94,7 @@ class TermsCreated extends Event
      */
     protected static $attributeMap = [
         'data' => 'data'
-	];
+    ];
 
     /**
      * Array of attributes to setter functions (for deserialization of responses)
@@ -103,7 +103,7 @@ class TermsCreated extends Event
      */
     protected static $setters = [
         'data' => 'setData'
-	];
+    ];
 
     /**
      * Array of attributes to getter functions (for serialization of requests)
@@ -112,7 +112,7 @@ class TermsCreated extends Event
      */
     protected static $getters = [
         'data' => 'getData'
-	];
+    ];
 
     /**
      * Array of attributes where the key is the local name,

@@ -56,7 +56,7 @@ class ResourcesUpdated extends Event
     protected static $swaggerTypes = [
         'data' => '\Clever\Client\Model\ResourceObject',
         'previous_attributes' => 'object'
-	];
+    ];
 
     /**
       * Array of property to format mappings. Used for (de)serialization
@@ -66,7 +66,7 @@ class ResourcesUpdated extends Event
     protected static $swaggerFormats = [
         'data' => null,
         'previous_attributes' => null
-	];
+    ];
 
     /**
      * Array of property to type mappings. Used for (de)serialization
@@ -97,7 +97,7 @@ class ResourcesUpdated extends Event
     protected static $attributeMap = [
         'data' => 'data',
         'previous_attributes' => 'previous_attributes'
-	];
+    ];
 
     /**
      * Array of attributes to setter functions (for deserialization of responses)
@@ -107,7 +107,7 @@ class ResourcesUpdated extends Event
     protected static $setters = [
         'data' => 'setData',
         'previous_attributes' => 'setPreviousAttributes'
-	];
+    ];
 
     /**
      * Array of attributes to getter functions (for serialization of requests)
@@ -117,7 +117,7 @@ class ResourcesUpdated extends Event
     protected static $getters = [
         'data' => 'getData',
         'previous_attributes' => 'getPreviousAttributes'
-	];
+    ];
 
     /**
      * Array of attributes where the key is the local name,

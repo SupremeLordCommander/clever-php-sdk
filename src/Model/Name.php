@@ -59,7 +59,7 @@ class Name implements ModelInterface, ArrayAccess
         'first' => 'string',
         'middle' => 'string',
         'last' => 'string'
-	];
+    ];
 
     /**
       * Array of property to format mappings. Used for (de)serialization
@@ -70,7 +70,7 @@ class Name implements ModelInterface, ArrayAccess
         'first' => null,
         'middle' => null,
         'last' => null
-	];
+    ];
 
     /**
      * Array of property to type mappings. Used for (de)serialization
@@ -102,7 +102,7 @@ class Name implements ModelInterface, ArrayAccess
         'first' => 'first',
         'middle' => 'middle',
         'last' => 'last'
-	];
+    ];
 
     /**
      * Array of attributes to setter functions (for deserialization of responses)
@@ -113,7 +113,7 @@ class Name implements ModelInterface, ArrayAccess
         'first' => 'setFirst',
         'middle' => 'setMiddle',
         'last' => 'setLast'
-	];
+    ];
 
     /**
      * Array of attributes to getter functions (for serialization of requests)
@@ -124,7 +124,7 @@ class Name implements ModelInterface, ArrayAccess
         'first' => 'getFirst',
         'middle' => 'getMiddle',
         'last' => 'getLast'
-	];
+    ];
 
     /**
      * Array of attributes where the key is the local name,

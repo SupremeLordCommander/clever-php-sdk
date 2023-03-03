@@ -58,7 +58,7 @@ class Principal implements ModelInterface, ArrayAccess
     protected static $swaggerTypes = [
         'name' => 'string',
         'email' => 'string'
-	];
+    ];
 
     /**
       * Array of property to format mappings. Used for (de)serialization
@@ -68,7 +68,7 @@ class Principal implements ModelInterface, ArrayAccess
     protected static $swaggerFormats = [
         'name' => null,
         'email' => null
-	];
+    ];
 
     /**
      * Array of property to type mappings. Used for (de)serialization
@@ -99,7 +99,7 @@ class Principal implements ModelInterface, ArrayAccess
     protected static $attributeMap = [
         'name' => 'name',
         'email' => 'email'
-	];
+    ];
 
     /**
      * Array of attributes to setter functions (for deserialization of responses)
@@ -109,7 +109,7 @@ class Principal implements ModelInterface, ArrayAccess
     protected static $setters = [
         'name' => 'setName',
         'email' => 'setEmail'
-	];
+    ];
 
     /**
      * Array of attributes to getter functions (for serialization of requests)
@@ -119,7 +119,7 @@ class Principal implements ModelInterface, ArrayAccess
     protected static $getters = [
         'name' => 'getName',
         'email' => 'getEmail'
-	];
+    ];
 
     /**
      * Array of attributes where the key is the local name,

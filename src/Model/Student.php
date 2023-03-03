@@ -81,7 +81,7 @@ class Student implements ModelInterface, ArrayAccess
         'unweighted_gpa' => 'string',
         'weighted_gpa' => 'string',
         'ext' => 'object'
-	];
+    ];
 
     /**
       * Array of property to format mappings. Used for (de)serialization
@@ -114,7 +114,7 @@ class Student implements ModelInterface, ArrayAccess
         'unweighted_gpa' => null,
         'weighted_gpa' => null,
         'ext' => null
-	];
+    ];
 
     /**
      * Array of property to type mappings. Used for (de)serialization
@@ -168,7 +168,7 @@ class Student implements ModelInterface, ArrayAccess
         'unweighted_gpa' => 'unweighted_gpa',
         'weighted_gpa' => 'weighted_gpa',
         'ext' => 'ext'
-	];
+    ];
 
     /**
      * Array of attributes to setter functions (for deserialization of responses)
@@ -201,7 +201,7 @@ class Student implements ModelInterface, ArrayAccess
         'unweighted_gpa' => 'setUnweightedGpa',
         'weighted_gpa' => 'setWeightedGpa',
         'ext' => 'setExt'
-	];
+    ];
 
     /**
      * Array of attributes to getter functions (for serialization of requests)
@@ -234,7 +234,7 @@ class Student implements ModelInterface, ArrayAccess
         'unweighted_gpa' => 'getUnweightedGpa',
         'weighted_gpa' => 'getWeightedGpa',
         'ext' => 'getExt'
-	];
+    ];
 
     /**
      * Array of attributes where the key is the local name,

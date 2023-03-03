@@ -63,7 +63,7 @@ class Resource implements ModelInterface, ArrayAccess
         'title' => 'string',
         'updated' => '\DateTime',
         'resource_id' => 'string'
-	];
+    ];
 
     /**
       * Array of property to format mappings. Used for (de)serialization
@@ -78,7 +78,7 @@ class Resource implements ModelInterface, ArrayAccess
         'title' => null,
         'updated' => 'date-time',
         'resource_id' => null
-	];
+    ];
 
     /**
      * Array of property to type mappings. Used for (de)serialization
@@ -114,7 +114,7 @@ class Resource implements ModelInterface, ArrayAccess
         'title' => 'title',
         'updated' => 'updated',
         'resource_id' => 'resource_id'
-	];
+    ];
 
     /**
      * Array of attributes to setter functions (for deserialization of responses)
@@ -129,7 +129,7 @@ class Resource implements ModelInterface, ArrayAccess
         'title' => 'setTitle',
         'updated' => 'setUpdated',
         'resource_id' => 'setResourceId'
-	];
+    ];
 
     /**
      * Array of attributes to getter functions (for serialization of requests)
@@ -144,7 +144,7 @@ class Resource implements ModelInterface, ArrayAccess
         'title' => 'getTitle',
         'updated' => 'getUpdated',
         'resource_id' => 'getResourceId'
-	];
+    ];
 
     /**
      * Array of attributes where the key is the local name,

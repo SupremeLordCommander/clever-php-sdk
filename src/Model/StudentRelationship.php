@@ -59,7 +59,7 @@ class StudentRelationship implements ModelInterface, ArrayAccess
         'student' => 'string',
         'relationship' => 'string',
         'type' => 'string'
-	];
+    ];
 
     /**
       * Array of property to format mappings. Used for (de)serialization
@@ -70,7 +70,7 @@ class StudentRelationship implements ModelInterface, ArrayAccess
         'student' => null,
         'relationship' => null,
         'type' => null
-	];
+    ];
 
     /**
      * Array of property to type mappings. Used for (de)serialization
@@ -102,7 +102,7 @@ class StudentRelationship implements ModelInterface, ArrayAccess
         'student' => 'student',
         'relationship' => 'relationship',
         'type' => 'type'
-	];
+    ];
 
     /**
      * Array of attributes to setter functions (for deserialization of responses)
@@ -113,7 +113,7 @@ class StudentRelationship implements ModelInterface, ArrayAccess
         'student' => 'setStudent',
         'relationship' => 'setRelationship',
         'type' => 'setType'
-	];
+    ];
 
     /**
      * Array of attributes to getter functions (for serialization of requests)
@@ -124,7 +124,7 @@ class StudentRelationship implements ModelInterface, ArrayAccess
         'student' => 'getStudent',
         'relationship' => 'getRelationship',
         'type' => 'getType'
-	];
+    ];
 
     /**
      * Array of attributes where the key is the local name,

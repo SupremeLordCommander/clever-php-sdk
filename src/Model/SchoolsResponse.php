@@ -58,7 +58,7 @@ class SchoolsResponse implements ModelInterface, ArrayAccess
     protected static $swaggerTypes = [
         'data' => '\Clever\Client\Model\SchoolResponse[]',
         'links' => '\Clever\Client\Model\Link[]'
-	];
+    ];
 
     /**
       * Array of property to format mappings. Used for (de)serialization
@@ -68,7 +68,7 @@ class SchoolsResponse implements ModelInterface, ArrayAccess
     protected static $swaggerFormats = [
         'data' => null,
         'links' => null
-	];
+    ];
 
     /**
      * Array of property to type mappings. Used for (de)serialization
@@ -99,7 +99,7 @@ class SchoolsResponse implements ModelInterface, ArrayAccess
     protected static $attributeMap = [
         'data' => 'data',
         'links' => 'links'
-	];
+    ];
 
     /**
      * Array of attributes to setter functions (for deserialization of responses)
@@ -109,7 +109,7 @@ class SchoolsResponse implements ModelInterface, ArrayAccess
     protected static $setters = [
         'data' => 'setData',
         'links' => 'setLinks'
-	];
+    ];
 
     /**
      * Array of attributes to getter functions (for serialization of requests)
@@ -119,7 +119,7 @@ class SchoolsResponse implements ModelInterface, ArrayAccess
     protected static $getters = [
         'data' => 'getData',
         'links' => 'getLinks'
-	];
+    ];
 
     /**
      * Array of attributes where the key is the local name,

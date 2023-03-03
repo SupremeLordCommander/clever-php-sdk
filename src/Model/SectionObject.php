@@ -57,7 +57,7 @@ class SectionObject implements ModelInterface, ArrayAccess
       */
     protected static $swaggerTypes = [
         'object' => '\Clever\Client\Model\Section'
-	];
+    ];
 
     /**
       * Array of property to format mappings. Used for (de)serialization
@@ -66,7 +66,7 @@ class SectionObject implements ModelInterface, ArrayAccess
       */
     protected static $swaggerFormats = [
         'object' => null
-	];
+    ];
 
     /**
      * Array of property to type mappings. Used for (de)serialization
@@ -96,7 +96,7 @@ class SectionObject implements ModelInterface, ArrayAccess
      */
     protected static $attributeMap = [
         'object' => 'object'
-	];
+    ];
 
     /**
      * Array of attributes to setter functions (for deserialization of responses)
@@ -105,7 +105,7 @@ class SectionObject implements ModelInterface, ArrayAccess
      */
     protected static $setters = [
         'object' => 'setObject'
-	];
+    ];
 
     /**
      * Array of attributes to getter functions (for serialization of requests)
@@ -114,7 +114,7 @@ class SectionObject implements ModelInterface, ArrayAccess
      */
     protected static $getters = [
         'object' => 'getObject'
-	];
+    ];
 
     /**
      * Array of attributes where the key is the local name,

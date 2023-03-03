@@ -105,7 +105,7 @@ class CourseObject implements ModelInterface, ArrayAccess
      */
     protected static $setters = [
         'object' => 'setObject'
-	];
+    ];
 
     /**
      * Array of attributes to getter functions (for serialization of requests)
@@ -114,7 +114,7 @@ class CourseObject implements ModelInterface, ArrayAccess
      */
     protected static $getters = [
         'object' => 'getObject'
-	];
+    ];
 
     /**
      * Array of attributes where the key is the local name,

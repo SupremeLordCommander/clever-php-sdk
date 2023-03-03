@@ -58,7 +58,7 @@ class DistrictAdmin implements ModelInterface, ArrayAccess
     protected static $swaggerTypes = [
         'legacy_id' => 'string',
         'title' => 'string'
-	];
+    ];
 
     /**
       * Array of property to format mappings. Used for (de)serialization
@@ -68,7 +68,7 @@ class DistrictAdmin implements ModelInterface, ArrayAccess
     protected static $swaggerFormats = [
         'legacy_id' => null,
         'title' => null
-	];
+    ];
 
     /**
      * Array of property to type mappings. Used for (de)serialization
@@ -99,7 +99,7 @@ class DistrictAdmin implements ModelInterface, ArrayAccess
     protected static $attributeMap = [
         'legacy_id' => 'legacy_id',
         'title' => 'title'
-	];
+    ];
 
     /**
      * Array of attributes to setter functions (for deserialization of responses)
@@ -109,7 +109,7 @@ class DistrictAdmin implements ModelInterface, ArrayAccess
     protected static $setters = [
         'legacy_id' => 'setLegacyId',
         'title' => 'setTitle'
-	];
+    ];
 
     /**
      * Array of attributes to getter functions (for serialization of requests)
@@ -119,7 +119,7 @@ class DistrictAdmin implements ModelInterface, ArrayAccess
     protected static $getters = [
         'legacy_id' => 'getLegacyId',
         'title' => 'getTitle'
-	];
+    ];
 
     /**
      * Array of attributes where the key is the local name,

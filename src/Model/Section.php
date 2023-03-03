@@ -73,7 +73,7 @@ class Section implements ModelInterface, ArrayAccess
         'teachers' => 'string[]',
         'term_id' => 'string',
         'ext' => 'object'
-	];
+    ];
 
     /**
       * Array of property to format mappings. Used for (de)serialization
@@ -98,7 +98,7 @@ class Section implements ModelInterface, ArrayAccess
         'teachers' => null,
         'term_id' => null,
         'ext' => null
-	];
+    ];
 
     /**
      * Array of property to type mappings. Used for (de)serialization
@@ -144,7 +144,7 @@ class Section implements ModelInterface, ArrayAccess
         'teachers' => 'teachers',
         'term_id' => 'term_id',
         'ext' => 'ext'
-	];
+    ];
 
     /**
      * Array of attributes to setter functions (for deserialization of responses)
@@ -169,7 +169,7 @@ class Section implements ModelInterface, ArrayAccess
         'teachers' => 'setTeachers',
         'term_id' => 'setTermId',
         'ext' => 'setExt'
-	];
+    ];
 
     /**
      * Array of attributes to getter functions (for serialization of requests)
@@ -194,7 +194,7 @@ class Section implements ModelInterface, ArrayAccess
         'teachers' => 'getTeachers',
         'term_id' => 'getTermId',
         'ext' => 'getExt'
-	];
+    ];
 
     /**
      * Array of attributes where the key is the local name,

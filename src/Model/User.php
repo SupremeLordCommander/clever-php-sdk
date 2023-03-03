@@ -63,7 +63,7 @@ class User implements ModelInterface, ArrayAccess
         'last_modified' => 'string',
         'name' => '\Clever\Client\Model\Name',
         'roles' => '\Clever\Client\Model\Roles'
-	];
+    ];
 
     /**
       * Array of property to format mappings. Used for (de)serialization
@@ -78,7 +78,7 @@ class User implements ModelInterface, ArrayAccess
         'last_modified' => 'datetime',
         'name' => null,
         'roles' => null
-	];
+    ];
 
     /**
      * Array of property to type mappings. Used for (de)serialization
@@ -114,7 +114,7 @@ class User implements ModelInterface, ArrayAccess
         'last_modified' => 'last_modified',
         'name' => 'name',
         'roles' => 'roles'
-	];
+    ];
 
     /**
      * Array of attributes to setter functions (for deserialization of responses)
@@ -129,7 +129,7 @@ class User implements ModelInterface, ArrayAccess
         'last_modified' => 'setLastModified',
         'name' => 'setName',
         'roles' => 'setRoles'
-	];
+    ];
 
     /**
      * Array of attributes to getter functions (for serialization of requests)
@@ -144,7 +144,7 @@ class User implements ModelInterface, ArrayAccess
         'last_modified' => 'getLastModified',
         'name' => 'getName',
         'roles' => 'getRoles'
-	];
+    ];
 
     /**
      * Array of attributes where the key is the local name,

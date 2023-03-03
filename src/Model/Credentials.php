@@ -57,7 +57,7 @@ class Credentials implements ModelInterface, ArrayAccess
       */
     protected static $swaggerTypes = [
         'district_username' => 'string'
-	];
+    ];
 
     /**
       * Array of property to format mappings. Used for (de)serialization
@@ -66,7 +66,7 @@ class Credentials implements ModelInterface, ArrayAccess
       */
     protected static $swaggerFormats = [
         'district_username' => null
-	];
+    ];
 
     /**
      * Array of property to type mappings. Used for (de)serialization
@@ -96,7 +96,7 @@ class Credentials implements ModelInterface, ArrayAccess
      */
     protected static $attributeMap = [
         'district_username' => 'district_username'
-	];
+    ];
 
     /**
      * Array of attributes to setter functions (for deserialization of responses)
@@ -105,7 +105,7 @@ class Credentials implements ModelInterface, ArrayAccess
      */
     protected static $setters = [
         'district_username' => 'setDistrictUsername'
-	];
+    ];
 
     /**
      * Array of attributes to getter functions (for serialization of requests)
@@ -114,7 +114,7 @@ class Credentials implements ModelInterface, ArrayAccess
      */
     protected static $getters = [
         'district_username' => 'getDistrictUsername'
-	];
+    ];
 
     /**
      * Array of attributes where the key is the local name,

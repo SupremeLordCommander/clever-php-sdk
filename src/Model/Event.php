@@ -59,7 +59,7 @@ class Event implements ModelInterface, ArrayAccess
         'type' => 'string',
         'id' => 'string',
         'created' => 'string'
-	];
+    ];
 
     /**
       * Array of property to format mappings. Used for (de)serialization
@@ -70,7 +70,7 @@ class Event implements ModelInterface, ArrayAccess
         'type' => null,
         'id' => null,
         'created' => 'datetime'
-	];
+    ];
 
     /**
      * Array of property to type mappings. Used for (de)serialization
@@ -102,7 +102,7 @@ class Event implements ModelInterface, ArrayAccess
         'type' => 'type',
         'id' => 'id',
         'created' => 'created'
-	];
+    ];
 
     /**
      * Array of attributes to setter functions (for deserialization of responses)
@@ -113,7 +113,7 @@ class Event implements ModelInterface, ArrayAccess
         'type' => 'setType',
         'id' => 'setId',
         'created' => 'setCreated'
-	];
+    ];
 
     /**
      * Array of attributes to getter functions (for serialization of requests)
@@ -124,7 +124,7 @@ class Event implements ModelInterface, ArrayAccess
         'type' => 'getType',
         'id' => 'getId',
         'created' => 'getCreated'
-	];
+    ];
 
     /**
      * Array of attributes where the key is the local name,

@@ -64,7 +64,7 @@ class Staff implements ModelInterface, ArrayAccess
         'staff_id' => 'string',
         'title' => 'string',
         'ext' => 'object'
-	];
+    ];
 
     /**
       * Array of property to format mappings. Used for (de)serialization
@@ -80,7 +80,7 @@ class Staff implements ModelInterface, ArrayAccess
         'staff_id' => null,
         'title' => null,
         'ext' => null
-	];
+    ];
 
     /**
      * Array of property to type mappings. Used for (de)serialization
@@ -117,7 +117,7 @@ class Staff implements ModelInterface, ArrayAccess
         'staff_id' => 'staff_id',
         'title' => 'title',
         'ext' => 'ext'
-	];
+    ];
 
     /**
      * Array of attributes to setter functions (for deserialization of responses)
@@ -133,7 +133,7 @@ class Staff implements ModelInterface, ArrayAccess
         'staff_id' => 'setStaffId',
         'title' => 'setTitle',
         'ext' => 'setExt'
-	];
+    ];
 
     /**
      * Array of attributes to getter functions (for serialization of requests)
@@ -149,7 +149,7 @@ class Staff implements ModelInterface, ArrayAccess
         'staff_id' => 'getStaffId',
         'title' => 'getTitle',
         'ext' => 'getExt'
-	];
+    ];
 
     /**
      * Array of attributes where the key is the local name,

@@ -72,7 +72,7 @@ class School implements ModelInterface, ArrayAccess
         'state_id' => 'string',
         'mdr_number' => 'string',
         'ext' => 'object'
-	];
+    ];
 
     /**
       * Array of property to format mappings. Used for (de)serialization
@@ -96,7 +96,7 @@ class School implements ModelInterface, ArrayAccess
         'state_id' => null,
         'mdr_number' => null,
         'ext' => null
-	];
+    ];
 
     /**
      * Array of property to type mappings. Used for (de)serialization
@@ -141,7 +141,7 @@ class School implements ModelInterface, ArrayAccess
         'state_id' => 'state_id',
         'mdr_number' => 'mdr_number',
         'ext' => 'ext'
-	];
+    ];
 
     /**
      * Array of attributes to setter functions (for deserialization of responses)
@@ -165,7 +165,7 @@ class School implements ModelInterface, ArrayAccess
         'state_id' => 'setStateId',
         'mdr_number' => 'setMdrNumber',
         'ext' => 'setExt'
-	];
+    ];
 
     /**
      * Array of attributes to getter functions (for serialization of requests)
@@ -189,7 +189,7 @@ class School implements ModelInterface, ArrayAccess
         'state_id' => 'getStateId',
         'mdr_number' => 'getMdrNumber',
         'ext' => 'getExt'
-	];
+    ];
 
     /**
      * Array of attributes where the key is the local name,
